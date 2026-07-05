@@ -1,0 +1,10 @@
+{
+  "note": "合否判定用の標準相手プール。weightは本番ladderメタで対応するアーキタイプのシェア%（knowledge/episodes/の最新レポート基準、判定時に正規化）。エージェントが増えたら/メタが動いたら更新する。2026-07-04にAlakazam追加（プール構成変更をまたぐweighted値の比較は不可）。",
+  "meta_date": "2026-07-03",
+  "opponents": [
+    {"dir": "agents/007_lucario_lethal", "weight": 5.0, "archetype": "Mega Lucario ex"},
+    {"dir": "agents/002_marnie_grimmsnarl", "weight": 21.7, "archetype": "Marnie's Grimmsnarl ex"},
+    {"dir": "agents/010_alakazam", "weight": 25.7, "archetype": "Alakazam"},
+    {"dir": "agents/000_random", "weight": 5.8, "archetype": "random（本番マッチングの10%ランダム対戦を反映。5.8/(52.4+5.8)≈10%）"}
+  ]
+}

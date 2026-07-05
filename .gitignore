@@ -1,0 +1,70 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+.python-version
+.venv/
+venv/
+env/
+.env
+.env.*
+!.env.example
+
+# Jupyter / notebooks
+.ipynb_checkpoints/
+
+# OS / editor local files
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# Claude local machine settings
+.claude/settings.local.json
+
+# Kaggle credentials and local caches
+kaggle.json
+.kaggle/
+
+# Downloaded Kaggle data and raw crawls.
+# Keep curated summaries in knowledge/ under version control instead.
+data/
+pokemon-tcg-ai-battle/
+
+# Compiled engine binaries (derived from the competition distribution;
+# rebuild instructions are in CLAUDE.md)
+cg/*.dylib
+cg/*.so
+cg/*.dll
+
+# Generated experiment outputs.
+# Keep hand-written experiment notes in knowledge/experiments/.
+arena/results/*.json
+arena/results/*.csv
+arena/results/*.log
+
+# Submission/package artifacts
+submission/
+submissions/
+*.zip
+*.tar
+*.tar.gz
+
+# Model/training artifacts
+models/
+checkpoints/
+runs/
+wandb/
+*.pkl
+*.pickle
+*.joblib
+*.pt
+*.pth
+*.onnx
+
+# Build outputs
+build/
+dist/
+*.egg-info/
