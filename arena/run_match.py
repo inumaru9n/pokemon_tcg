@@ -97,10 +97,20 @@ def _validate_selection(sel, select) -> str:
     return ""
 
 
+def derive_engine_seed(engine_seed_base: int, game_index: int) -> int:
+    """Deterministic per-game engine seed for CRN pairing.
+
+    Two runs with the same (engine_seed_base, game_index, decks) get identical
+    engine RNG streams (deck order, coin flips), so candidate-vs-candidate
+    comparisons share初期条件 and the opening-luck variance cancels.
+    """
+    return ((engine_seed_base * 1000003 + game_index * 7919 + 1) & 0xFFFFFFFF) or 1
+
+
 def play_game(args: tuple) -> GameRecord:
-    game_index, a_dir, b_dir, step_cap, base_seed = args
+    game_index, a_dir, b_dir, step_cap, base_seed, engine_seed_base = args
     _ensure_worker(a_dir, b_dir)
-    from cg.game import battle_start, battle_select, battle_finish
+    from cg.game import battle_start, battle_start_seeded, battle_select, battle_finish
 
     random.seed(base_seed + game_index)
     a_is_seat0 = game_index % 2 == 0
@@ -112,7 +122,11 @@ def play_game(args: tuple) -> GameRecord:
     rec = GameRecord(game_index=game_index, seat0=seat[0], winner="draw",
                      steps=0, reason="result")
 
-    obs_dict, start = battle_start(deck0, deck1)
+    if engine_seed_base is not None:
+        obs_dict, start = battle_start_seeded(
+            deck0, deck1, derive_engine_seed(engine_seed_base, game_index))
+    else:
+        obs_dict, start = battle_start(deck0, deck1)
     if obs_dict is None:
         rec.winner = "draw"
         rec.reason = "agent_error"
@@ -174,9 +188,10 @@ def wilson_ci(score: float, n: int, z: float = 1.96) -> tuple[float, float]:
 
 
 def run_series(a_dir: str, b_dir: str, n_games: int, workers: int,
-               step_cap: int, seed: int) -> dict:
+               step_cap: int, seed: int, engine_seed_base: int = None) -> dict:
     t0 = time.time()
-    args = [(i, a_dir, b_dir, step_cap, seed) for i in range(n_games)]
+    args = [(i, a_dir, b_dir, step_cap, seed, engine_seed_base)
+            for i in range(n_games)]
     if workers <= 1:
         records = [play_game(a) for a in args]
     else:
@@ -209,6 +224,7 @@ def run_series(a_dir: str, b_dir: str, n_games: int, workers: int,
         "b_avg_move_ms": round(1000 * sum(r.b_move_time for r in records) / max(1, b_moves), 3),
         "duration_sec": round(time.time() - t0, 1),
         "seed": seed,
+        "engine_seed_base": engine_seed_base,
         "records": [asdict(r) for r in records],
     }
 
@@ -222,12 +238,15 @@ def main() -> None:
     ap.add_argument("-w", "--workers", type=int, default=max(1, (os.cpu_count() or 2) - 1))
     ap.add_argument("--step-cap", type=int, default=30000)
     ap.add_argument("--seed", type=int, default=42)
+    ap.add_argument("--engine-seed", type=int, default=None,
+                    help="CRN mode: fix engine RNG per game from this base seed "
+                         "(requires local libcg with BattleStartSeeded)")
     ap.add_argument("--json", dest="json_path", default=None,
                     help="write full results (incl. per-game records) to this file")
     args = ap.parse_args()
 
     summary = run_series(args.agent_a, args.agent_b, args.games, args.workers,
-                         args.step_cap, args.seed)
+                         args.step_cap, args.seed, args.engine_seed)
 
     if args.json_path:
         os.makedirs(os.path.dirname(os.path.abspath(args.json_path)), exist_ok=True)

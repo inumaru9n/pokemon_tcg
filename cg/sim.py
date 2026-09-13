@@ -33,6 +33,26 @@ lib.GameInitialize()
 lib.BattleStart.restype = StartData
 lib.BattleStart.argtypes = [ctypes.POINTER(ctypes.c_int)]
 
+# CRN用のシード付き対戦開始（ローカル追加ビルド cg/Export_seeded.cpp のみが持つ。
+# 配布オリジナルのdylib/Kaggle環境には存在しないため、hasattrで能力検出する）
+try:
+    lib.BattleStartSeeded.restype = StartData
+    lib.BattleStartSeeded.argtypes = [ctypes.POINTER(ctypes.c_int), ctypes.c_uint]
+    HAS_SEEDED_START = True
+except AttributeError:
+    HAS_SEEDED_START = False
+
+# 特権情報API（相手の隠れ領域を返す。ローカル追加ビルドのみ。Critic訓練専用）。
+# **シグネチャの登録はここに一元化する** — 呼び出し側モジュールで登録すると、
+# そのモジュールをimportせずに lib.GetHiddenData を触った経路が
+# ctypesの既定 restype(c_int) で戻り値を誤解釈する。
+try:
+    lib.GetHiddenData.restype = SerialData
+    lib.GetHiddenData.argtypes = [ctypes.c_void_p, ctypes.c_int]
+    HAS_HIDDEN_DATA = True
+except AttributeError:
+    HAS_HIDDEN_DATA = False
+
 lib.AgentStart.restype = ctypes.c_void_p
 
 lib.BattleFinish.argtypes = [ctypes.c_void_p]

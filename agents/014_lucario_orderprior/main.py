@@ -59,7 +59,10 @@ LOW_DECK_COUNT = 10
 ORDER_PRIOR_LAMBDA = 50  # swept in EXP-014
 
 
-DECK_PATH = os.path.join(os.path.dirname(os.path.abspath(__file__)), "deck.csv")
+try:  # Kaggle評価環境はexecロードのため __file__ が無い
+    DECK_PATH = os.path.join(os.path.dirname(os.path.abspath(__file__)), "deck.csv")
+except NameError:
+    DECK_PATH = "deck.csv"
 if not os.path.exists(DECK_PATH):
     DECK_PATH = "/kaggle_simulations/agent/deck.csv"
 with open(DECK_PATH, "r", encoding="utf-8") as f:

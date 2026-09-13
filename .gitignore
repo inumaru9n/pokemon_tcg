@@ -68,3 +68,26 @@ wandb/
 build/
 dist/
 *.egg-info/
+
+# --- 2026-09-13 post-competition cleanup ---
+
+# Virtualenvs of any name (.venv / .venv_train / ...)
+.venv*/
+
+# Local tool scratch directories
+.codex-finalizer-*/
+
+# Backup of the pre-2026-07-15 engine distribution (derived from the
+# competition data; rebuild/sync instructions are in CLAUDE.md)
+dist_backup_pre0715/
+
+# Trained model artifacts. Agent SOURCE (main.py / deck.csv / feat_*.py /
+# nn_*.py) stays under version control; weights do not.
+#   agents/**/*.npz          ~900MB  (numpy policy weights)
+#   agents/**/model_*.txt    ~980MB  (LightGBM text dumps)
+# Which model belongs to which experiment is recorded in knowledge/experiments/.
+*.npz
+model_*.txt
+
+# Compiled engine binaries kept as local backups
+*.bak

@@ -1,0 +1,558 @@
+games analyzed: 202
+
+== ability ==
+  Drakloak: 1142
+  Spikemuth Gym: 242
+  Fezandipiti ex: 206
+  Munkidori: 196
+  Dusknoir: 91
+  Dusclops: 60
+
+== attach ==
+  Basic {R} Energy->Drakloak: 183
+  Basic {P} Energy->Drakloak: 160
+  Basic {R} Energy->Dreepy: 156
+  Basic {R} Energy->Dragapult ex: 106
+  Basic {P} Energy->Dreepy: 66
+  Basic {P} Energy->Dragapult ex: 64
+  Basic {D} Energy->Munkidori: 57
+  Basic {R} Energy->Moltres: 24
+  Basic {R} Energy->Munkidori: 20
+  Basic {P} Energy->Munkidori: 19
+  Basic {R} Energy->Fezandipiti ex: 12
+  Basic {R} Energy->Meowth ex: 8
+  Basic {D} Energy->Moltres: 5
+  Basic {P} Energy->Fezandipiti ex: 5
+  Basic {P} Energy->Duskull: 4
+  Basic {D} Energy->Fezandipiti ex: 3
+  Basic {P} Energy->Meowth ex: 2
+  Basic {P} Energy->Moltres: 1
+  Basic {D} Energy->Dragapult ex: 1
+  Basic {D} Energy->Meowth ex: 1
+  Basic {D} Energy->Drakloak: 1
+  Basic {D} Energy->Duskull: 1
+  Basic {R} Energy->Duskull: 1
+  Basic {D} Energy->Dreepy: 1
+
+== attack ==
+  Dragapult ex:Phantom Dive: 504
+  Budew:Itchy Pollen: 130
+  Dragapult ex:Jet Headbutt: 80
+  Drakloak:Dragon Headbutt: 39
+  Munkidori:Mind Bend: 39
+  Moltres:Fighting Wings: 26
+  Dreepy:Bite: 5
+  Duskull:Come and Get You: 2
+
+== attack_vsAlak ==
+  Dragapult ex:Phantom Dive: 100
+  Budew:Itchy Pollen: 48
+  Dragapult ex:Jet Headbutt: 25
+  Munkidori:Mind Bend: 10
+  Drakloak:Dragon Headbutt: 7
+  Moltres:Fighting Wings: 5
+  Dreepy:Bite: 1
+  Duskull:Come and Get You: 1
+
+== attack_vsOther ==
+  Dragapult ex:Phantom Dive: 404
+  Budew:Itchy Pollen: 82
+  Dragapult ex:Jet Headbutt: 55
+  Drakloak:Dragon Headbutt: 32
+  Munkidori:Mind Bend: 29
+  Moltres:Fighting Wings: 21
+  Dreepy:Bite: 4
+  Duskull:Come and Get You: 1
+
+== count[DRAW_COUNT][?] ==
+  1: 29
+  2: 7
+  0: 7
+  4: 4
+  3: 4
+
+== count[REMOVE_DAMAGE_COUNTER_COUNT][Munkidori] ==
+  3: 143
+  1: 30
+  2: 10
+
+== cursed_blast_turn ==
+  Dusknoir:T12: 37
+  Dusclops:T12: 26
+  Dusknoir:T11: 14
+  Dusknoir:T9: 12
+  Dusknoir:T10: 11
+  Dusknoir:T6: 8
+  Dusclops:T11: 7
+  Dusclops:T9: 6
+  Dusclops:T10: 5
+  Dusclops:T7: 4
+  Dusknoir:T8: 4
+  Dusclops:T3: 4
+  Dusclops:T6: 4
+  Dusknoir:T7: 3
+  Dusclops:T5: 3
+  Dusknoir:T5: 2
+  Dusclops:T4: 1
+
+== discard_self[Hand Trimmer] ==
+  Buddy-Buddy Poffin: 4
+  Ultra Ball: 3
+  Drakloak: 2
+  Dreepy: 2
+  Boss’s Orders: 2
+  Crushing Hammer: 2
+  Dragapult ex: 2
+  Dawn: 1
+  Meowth ex: 1
+  Dusclops: 1
+  Dusknoir: 1
+  Basic {D} Energy: 1
+
+== discard_self[Ultra Ball] ==
+  Buddy-Buddy Poffin: 73
+  Boss’s Orders: 40
+  Dragapult ex: 40
+  Ultra Ball: 31
+  Drakloak: 30
+  Moltres: 29
+  Dreepy: 28
+  Lillie's Determination: 26
+  Basic {R} Energy: 25
+  Dusclops: 25
+  Budew: 21
+  Team Rocket's Watchtower: 17
+  Meowth ex: 15
+  Crispin: 13
+  Dawn: 10
+  Dusknoir: 10
+  Crushing Hammer: 8
+  Basic {D} Energy: 7
+  Duskull: 5
+  Night Stretcher: 4
+  Basic {P} Energy: 3
+  Munkidori: 3
+  Unfair Stamp: 1
+
+== discard_self[Xerosic’s Machinations] ==
+  Ultra Ball: 35
+  Lillie's Determination: 21
+  Boss’s Orders: 13
+  Dragapult ex: 13
+  Basic {R} Energy: 12
+  Drakloak: 10
+  Buddy-Buddy Poffin: 9
+  Dawn: 9
+  Dreepy: 8
+  Moltres: 7
+  Dusclops: 6
+  Munkidori: 5
+  Crispin: 5
+  Meowth ex: 5
+  Poké Pad: 3
+  Basic {P} Energy: 3
+  Crushing Hammer: 2
+  Team Rocket's Watchtower: 2
+  Duskull: 2
+  Dusknoir: 1
+  Budew: 1
+  Basic {D} Energy: 1
+
+== dmgctr[Dusclops]_opp_vsAlak ==
+  Abra(hp50): 10
+  Alakazam(hp130): 2
+  Dudunsparce(hp130): 1
+  Alakazam(hp50): 1
+  Alakazam(hp40): 1
+  Dunsparce(hp50): 1
+  Alakazam(hp140): 1
+  Alakazam(hp80): 1
+  Dudunsparce(hp80): 1
+  Alakazam(hp110): 1
+  Shaymin(hp80): 1
+  Dudunsparce(hp10): 1
+
+== dmgctr[Dusclops]_opp_vsOther ==
+  Munkidori(hp100): 3
+  Munkidori(hp110): 3
+  Mega Kangaskhan ex(hp190): 2
+  Team Rocket's Tarountula(hp50): 2
+  Crustle(hp90): 1
+  Marnie's Morgrem(hp50): 1
+  Rellor(hp50): 1
+  Crustle(hp120): 1
+  Dudunsparce(hp140): 1
+  Dunsparce(hp70): 1
+  Team Rocket's Mewtwo ex(hp220): 1
+  Team Rocket's Mewtwo ex(hp170): 1
+  Dwebble(hp70): 1
+  Mega Lopunny ex(hp130): 1
+  Swirlix(hp50): 1
+  Crustle(hp30): 1
+  Team Rocket's Murkrow(hp80): 1
+  Team Rocket's Murkrow(hp30): 1
+  Cynthia's Garchomp ex(hp170): 1
+  Fan Rotom(hp70): 1
+  Marnie's Morgrem(hp70): 1
+  Team Rocket's Articuno(hp110): 1
+  Budew(hp30): 1
+  Marnie's Grimmsnarl ex(hp140): 1
+  Marnie's Morgrem(hp100): 1
+
+== dmgctr[Dusknoir]_opp_vsAlak ==
+  Kadabra(hp80): 6
+  Alakazam(hp80): 2
+  Abra(hp50): 2
+  Alakazam(hp130): 2
+  Shaymin(hp80): 2
+  Alakazam(hp140): 1
+  Kadabra(hp70): 1
+  Alakazam(hp110): 1
+  Dudunsparce(hp140): 1
+  Dunsparce(hp70): 1
+
+== dmgctr[Dusknoir]_opp_vsOther ==
+  Marnie's Grimmsnarl ex(hp320): 9
+  Munkidori(hp110): 9
+  Marnie's Morgrem(hp100): 8
+  Crustle(hp170): 3
+  Team Rocket's Spidops(hp130): 3
+  Crustle(hp160): 2
+  Cynthia's Garchomp ex(hp130): 2
+  Marnie's Morgrem(hp70): 2
+  Marnie's Grimmsnarl ex(hp310): 2
+  Mega Froslass ex(hp310): 2
+  Team Rocket's Murkrow(hp80): 2
+  Team Rocket's Spidops(hp120): 1
+  Crustle(hp200): 1
+  Crustle(hp220): 1
+  Team Rocket's Spidops(hp10): 1
+  Marnie's Morgrem(hp90): 1
+  Team Rocket's Articuno(hp120): 1
+  Marnie's Impidimp(hp70): 1
+  Marnie's Grimmsnarl ex(hp90): 1
+  Crustle(hp70): 1
+  Marnie's Impidimp(hp20): 1
+  Marnie's Grimmsnarl ex(hp260): 1
+  Crustle(hp130): 1
+  Dipplin(hp80): 1
+  Mega Kangaskhan ex(hp300): 1
+
+== dmgctr[Munkidori]_opp_vsAlak ==
+  Kadabra(hp80): 1
+  Dunsparce(hp70): 1
+  Alakazam(hp140): 1
+  Abra(hp50): 1
+  Dudunsparce(hp140): 1
+  Dudunsparce(hp80): 1
+  Alakazam(hp120): 1
+
+== dmgctr[Munkidori]_opp_vsOther ==
+  Marnie's Impidimp(hp70): 37
+  Marnie's Morgrem(hp100): 9
+  Munkidori(hp110): 8
+  Team Rocket's Tarountula(hp50): 7
+  Munkidori(hp80): 7
+  Munkidori(hp70): 6
+  Munkidori(hp100): 6
+  Team Rocket's Spidops(hp70): 5
+  Munkidori(hp60): 5
+  Staryu(hp70): 4
+  Team Rocket's Spidops(hp130): 3
+  Team Rocket's Articuno(hp120): 3
+  Marnie's Impidimp(hp40): 3
+  Marnie's Morgrem(hp70): 3
+  Crustle(hp190): 2
+  Marnie's Morgrem(hp50): 2
+  Marnie's Morgrem(hp80): 2
+  Munkidori(hp40): 2
+  Team Rocket's Spidops(hp60): 2
+  Crustle(hp90): 2
+  Team Rocket's Spidops(hp20): 2
+  Marnie's Grimmsnarl ex(hp90): 2
+  Snorunt(hp70): 2
+  Team Rocket's Spidops(hp110): 2
+  Team Rocket's Spidops(hp100): 2
+
+== end_turn ==
+  count: 471
+
+== evolve ==
+  Dreepy->Drakloak: 509
+  Drakloak->Dragapult ex: 347
+  Duskull->Dusclops: 251
+  Dusclops->Dusknoir: 123
+
+== gust_target ==
+  Snorunt(hp70,e0): 28
+  Fezandipiti ex(hp210,e0): 27
+  Munkidori(hp110,e1): 17
+  Munkidori(hp110,e0): 15
+  Team Rocket's Articuno(hp120,e0): 10
+  Cynthia's Roserade(hp130,e0): 9
+  Froslass(hp90,e0): 5
+  Team Rocket's Mewtwo ex(hp280,e0): 4
+  Team Rocket's Mimikyu(hp60,e0): 4
+  Abra(hp50,e0): 4
+  Team Rocket's Mewtwo ex(hp280,e2): 3
+  Mega Kangaskhan ex(hp300,e0): 3
+  Kadabra(hp80,e0): 3
+  Mega Froslass ex(hp310,e0): 3
+  Dwebble(hp70,e0): 3
+  Fezandipiti ex(hp200,e0): 3
+  Staryu(hp70,e0): 2
+  Abra(hp50,e1): 2
+  Marnie's Morgrem(hp100,e0): 2
+  Fezandipiti ex(hp140,e0): 2
+  Marnie's Impidimp(hp70,e1): 2
+  Dudunsparce(hp140,e0): 2
+  Fezandipiti ex(hp10,e0): 2
+  Mega Kangaskhan ex(hp300,e2): 1
+  Dwebble(hp70,e1): 1
+
+== heal[Munkidori] ==
+  Dragapult ex: 77
+  Munkidori: 43
+  Dreepy: 25
+  Drakloak: 24
+  Fezandipiti ex: 9
+  Dusclops: 6
+  Duskull: 5
+  Moltres: 3
+  Meowth ex: 2
+  Dusknoir: 1
+  Budew: 1
+
+== is_first ==
+  YES: 98
+
+== other[ACTIVATE][?] ==
+  1: 27
+
+== other[ATTACH_FROM][Crispin] ==
+  3: 203
+
+== other[ATTACH_TO][Crispin] ==
+  3: 203
+
+== other[DISCARD_ENERGY][?] ==
+  6: 150
+
+== other[DISCARD_ENERGY][Crushing Hammer] ==
+  6: 170
+
+== other[SKILL_ORDER][?] ==
+  15: 18
+
+== pdive_ntargets ==
+  1: 2988
+
+== pdive_target_vsAlak ==
+  Abra(hp50): 46
+  Abra(hp40): 45
+  Abra(hp20): 45
+  Abra(hp10): 45
+  Abra(hp30): 44
+  Kadabra(hp80): 30
+  Kadabra(hp70): 17
+  Dunsparce(hp70): 17
+  Kadabra(hp60): 15
+  Kadabra(hp50): 14
+  Dunsparce(hp60): 14
+  Dunsparce(hp50): 14
+  Dunsparce(hp40): 14
+  Dunsparce(hp30): 14
+  Kadabra(hp40): 13
+  Kadabra(hp30): 13
+  Dunsparce(hp20): 11
+  Dudunsparce(hp140): 8
+  Dudunsparce(hp130): 7
+  Dudunsparce(hp120): 7
+  Dudunsparce(hp110): 7
+  Dudunsparce(hp100): 7
+  Dudunsparce(hp90): 7
+  Fezandipiti ex(hp210): 7
+  Alakazam(hp140): 7
+
+== pdive_target_vsOther ==
+  Marnie's Impidimp(hp40): 54
+  Marnie's Impidimp(hp30): 54
+  Snorunt(hp60): 48
+  Marnie's Impidimp(hp20): 47
+  Munkidori(hp60): 45
+  Marnie's Impidimp(hp70): 43
+  Munkidori(hp80): 42
+  Munkidori(hp70): 42
+  Munkidori(hp30): 40
+  Munkidori(hp40): 40
+  Marnie's Impidimp(hp60): 40
+  Munkidori(hp50): 39
+  Marnie's Impidimp(hp50): 39
+  Munkidori(hp110): 34
+  Munkidori(hp100): 34
+  Team Rocket's Spidops(hp130): 32
+  Munkidori(hp20): 32
+  Snorunt(hp70): 32
+  Team Rocket's Spidops(hp120): 31
+  Munkidori(hp90): 30
+  Team Rocket's Articuno(hp120): 29
+  Munkidori(hp10): 29
+  Team Rocket's Spidops(hp100): 28
+  Team Rocket's Spidops(hp90): 27
+  Snorunt(hp40): 27
+
+== play ==
+  Poké Pad: 478
+  Crushing Hammer: 338
+  Lillie's Determination: 328
+  Buddy-Buddy Poffin: 305
+  Crispin: 240
+  Ultra Ball: 232
+  Dreepy: 228
+  Night Stretcher: 224
+  Team Rocket's Watchtower: 203
+  Boss’s Orders: 191
+  Munkidori: 128
+  Unfair Stamp: 107
+  Fezandipiti ex: 82
+  Duskull: 80
+  Dawn: 68
+  Budew: 34
+  Moltres: 31
+  Meowth ex: 31
+
+== retreat ==
+  count: 190
+
+== setup_active ==
+  Dreepy: 59
+  Duskull: 39
+  Moltres: 33
+  Munkidori: 30
+  Budew: 21
+  Meowth ex: 14
+  Fezandipiti ex: 6
+
+== setup_bench ==
+  Dreepy: 62
+  Fezandipiti ex: 21
+  Meowth ex: 20
+  Duskull: 14
+  Munkidori: 6
+  Budew: 3
+  Moltres: 2
+
+== setup_bench_count ==
+  1: 68
+  2: 20
+  3: 5
+  5: 1
+
+== to_active_mine ==
+  Drakloak: 183
+  Dragapult ex: 181
+  Budew: 86
+  Duskull: 37
+  Munkidori: 36
+  Dreepy: 25
+  Moltres: 23
+  Meowth ex: 4
+  Dusclops: 3
+  Dusknoir: 1
+
+== to_bench[Buddy-Buddy Poffin] ==
+  Dreepy: 251
+  Duskull: 212
+  Budew: 41
+
+== tohand[?] ==
+  cardNone: 869
+
+== tohand[Crispin] ==
+  Basic {R} Energy: 188
+  Basic {P} Energy: 36
+  Basic {D} Energy: 7
+
+== tohand[Dawn] ==
+  Dragapult ex: 57
+  Drakloak: 51
+  Fezandipiti ex: 25
+  Dreepy: 19
+  Dusclops: 14
+  Munkidori: 12
+  Dusknoir: 5
+  Meowth ex: 4
+  Duskull: 4
+  Budew: 2
+  Moltres: 1
+
+== tohand[Drakloak] ==
+  Lillie's Determination: 118
+  Basic {R} Energy: 93
+  Dragapult ex: 88
+  Crispin: 85
+  Poké Pad: 72
+  Boss’s Orders: 68
+  Basic {P} Energy: 67
+  Crushing Hammer: 61
+  Ultra Ball: 57
+  Buddy-Buddy Poffin: 56
+  Night Stretcher: 53
+  Unfair Stamp: 46
+  Dusclops: 44
+  Team Rocket's Watchtower: 39
+  Drakloak: 38
+  Dawn: 30
+  Basic {D} Energy: 28
+  Dreepy: 24
+  Fezandipiti ex: 22
+  Duskull: 13
+  Dusknoir: 11
+  Budew: 9
+  Munkidori: 9
+  Moltres: 7
+  Meowth ex: 4
+
+== tohand[Meowth ex] ==
+  Lillie's Determination: 25
+  Crispin: 1
+  Boss’s Orders: 1
+
+== tohand[Night Stretcher] ==
+  Basic {R} Energy: 50
+  Basic {P} Energy: 44
+  Dragapult ex: 40
+  Munkidori: 13
+  Drakloak: 12
+  Dreepy: 12
+  Dusclops: 10
+  Duskull: 8
+  Budew: 7
+  Moltres: 7
+  Dusknoir: 7
+  Meowth ex: 5
+  Basic {D} Energy: 5
+  Fezandipiti ex: 4
+
+== tohand[Poké Pad] ==
+  Drakloak: 185
+  Dreepy: 82
+  Dusclops: 81
+  Munkidori: 52
+  Dusknoir: 37
+  Budew: 15
+  Duskull: 14
+  Moltres: 3
+
+== tohand[Ultra Ball] ==
+  Dragapult ex: 65
+  Drakloak: 44
+  Fezandipiti ex: 30
+  Dreepy: 23
+  Dusclops: 18
+  Meowth ex: 17
+  Dusknoir: 14
+  Munkidori: 10
+  Budew: 2
+  Duskull: 1
+  Moltres: 1

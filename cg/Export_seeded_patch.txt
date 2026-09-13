@@ -1,0 +1,24 @@
+追加する特権情報API（GetHiddenData）の設計メモ。実体は cg/Export_seeded.cpp 末尾。
+
+目的:
+  リーグRLのCritic（privileged value baseline）に、相手の隠れ情報を渡す。
+  Criticは訓練専用で提出物に載らないため、本番との乖離は生じない。
+
+なぜ既存APIでは取れないか:
+  - GetBattleData(ptr) は ApiGetBattleData → ToJsonApi で
+    `int playerIndex = state.selectPlayer;` と**手番プレイヤー視点に固定**される。
+    PlayerJson は `pi == myPlayerIndex` のときだけ hand を出すので、相手の手札は null。
+  - 観戦者モード（playerIndex==2）なら両者の hand/deck/prize が出るが、
+    **山札60枚×2＋カード名**まで毎回吐くのでRLの生成ループには重すぎる。
+
+設計上の注意（実装時に踏まないこと）:
+  (1) **nextLogStart() を呼ばない**。State.h:425 で
+        logIndex.at(playerIndex) = (int)logs.size();
+      と**カーソルを進める副作用**がある。特権取得のために呼ぶと、本来の観測が
+      受け取るはずのログを食い潰して logs 特徴が壊れる。
+  (2) **data->jsonBuilder を使わない**。ApiGetBattleData の戻り値は
+      data->jsonBuilder.buf.c_str() へのポインタなので、共有すると
+      直前の観測バッファを上書きしうる。専用の静的バッファを使う。
+  (3) 配布ソースは一切変更しない（CLAUDE.md）。Export.cpp を #include した上で
+      追加関数のみ定義する。既存シンボルは無変更＝後方互換。
+  (4) 出力は cardId の配列のみ（カード名・状態は不要）。Criticは枚数構成しか使わない。

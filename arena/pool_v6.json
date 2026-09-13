@@ -1,0 +1,46 @@
+{
+ "note": "合否判定用の標準相手プール **v6**（2026-08-05確定、07-30〜08-03メタ基準、36,328デッキ観測）。**v5とのweighted値比較は不可**（メタが激変: Marnie 53.9→48.3 / **Lopunny 1.1→9.7** / **Alakazam 16.3→6.3** / **Spidops 9.6→2.7** / Kangaskhan 8.7→9.7 / Dragapult 2.5→4.4 / Garchomp 5.0→3.9）。v6は**重みの更新のみ**でレプリカは据え置き。**カバー外 11.5%＝Teal Mask Ogerpon ex 7.2%（完全な新顔・枠なし）+ Thwackey 4.3%（枠なし）**。Ogerponは対Marnie 85.1%という極端な形でMarnieを狩っており、対面プロファイルが既存のどの枠とも違う＝**主力候補の最終確定前に必ずスポットチェックすること**。既知の課題（v5から継続）: (a) 085 Kangaskhan は乖離-15.3pt (b) 021 Dragapult は未較正 (c) 血縁バイアス: Alakazam枠084に対しAlakazam系候補は甘く出る（ただし重みは6.3%に低下） (d) **086 Lopunny(53db4c87b8)は重みが8.8倍になったが軽量逆設計のまま**＝忠実度の確認が急務。現行メタの最強デッキはMega Lopunny ex（加重60.9%）で、その枠の忠実度が全体の判定を左右する",
+ "meta_date": "2026-07-30〜08-03",
+ "opponents": [
+  {
+   "dir": "agents/101_marnie_luca",
+   "weight": 48.3,
+   "archetype": "Marnie's Grimmsnarl ex（1ec0f47981/Luca のSLレプリカ（EXP-096）。**忠実度ゲート合格 +1.1pt**。082（乖離+19.3pt）から交代）"
+  },
+  {
+   "dir": "agents/084_alakazam_majkel",
+   "weight": 6.3,
+   "archetype": "Alakazam（156952a871=Majkel型レプリカ（EXP-084）。vs038で真値-0.5pt。**血縁バイアス注意**（Alakazam系候補はミラー寄りで甘く出る））"
+  },
+  {
+   "dir": "agents/098_spidops_gen",
+   "weight": 2.7,
+   "archetype": "Team Rocket's Spidops（d5834c603a のSLレプリカ（EXP-096）。**忠実度ゲート合格 +0.5pt**。083（乖離+30.3pt）から交代。Articuno VeilがPowerful Handを無効化する構造カウンター）"
+  },
+  {
+   "dir": "agents/085_kangaskhan_e57e",
+   "weight": 9.7,
+   "archetype": "Mega Kangaskhan ex（e57e レプリカ（EXP-085）。本番個体値との乖離-15.3pt（軽量逆設計の限界。100=SL版は不採用））"
+  },
+  {
+   "dir": "agents/041_garchomp_replica",
+   "weight": 3.9,
+   "archetype": "Cynthia's Garchomp ex（fc15 レプリカ（EXP-041）。乖離-5.9pt）"
+  },
+  {
+   "dir": "agents/021_dragapult_sample",
+   "weight": 4.4,
+   "archetype": "Dragapult ex（公式サンプル方策（未較正）。087レプリカはゲート不合格でrejected）"
+  },
+  {
+   "dir": "agents/086_lopunny_53db",
+   "weight": 9.7,
+   "archetype": "Mega Lopunny ex（53db レプリカ（EXP-086）。シェアが4.5%→1.1%に低下したため重みを縮小）"
+  },
+  {
+   "dir": "agents/000_random",
+   "weight": 2.9,
+   "archetype": "random（本番10%ランダム対戦 + カバー外テール。カバー率97.1%）"
+  }
+ ]
+}

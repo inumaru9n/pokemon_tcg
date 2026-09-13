@@ -1,0 +1,46 @@
+{
+ "note": "合否判定用の標準相手プール v4（2026-07-24確定、07-22メタ基準。EXP-082〜087=I-129で一括更新）。weightは2026-07-22メタのシェア%。**v3とのweighted値比較は不可**（Marnie38.4/Alakazam19.9/Spidops13.1の新分布+代表5枠交代）。忠実度ゲートの新規約: プール第2段はトップ個体レプリカのため、照合はアーキ平均でなく**individual-vs-individualのladder対面値**を正とする（EXP-087の教訓）。既知の乖離: (a)082はMarnie本人の対壁バースト未再現=対Kangaskhan系が本番より甘い（EXP-085で真因特定=壁を割る側の攻撃頻度分布。乖離4例目） (b)086はvs082が-24pt（精密sequencing対面の既知パターン、weight4.5%×乖離=weighted歪み~0.9pt=ノイズ床） (c)021は未較正のまま続投（087レプリカはゲート不合格でrejected、EXP-087。Dragapultはテンポ/リソース管理デッキで軽量逆設計が写らない=昇格にはフル精読が必要） (d)血縁バイアス: Alakazam枠084に対しAlakazam系候補（057/058/075系）はミラー寄りで甘く出る（weight19.9%、v3の40.4%より軽減）。TailのFroslass1.3%/Thwackey1.2%/Brambleghast等はカバー外=主力確定前にスポットチェックを推奨",
+ "meta_date": "2026-07-22",
+ "opponents": [
+  {
+   "dir": "agents/082_marnie_1ec0",
+   "weight": 38.4,
+   "archetype": "Marnie's Grimmsnarl ex（1ec0f47981レプリカ、EXP-082。n=2095/51.3%の新覇権個体。Froslass特性チップ+ベンチKangaskhan狩り実装済み。対壁バーストは未再現）"
+  },
+  {
+   "dir": "agents/084_alakazam_majkel",
+   "weight": 19.9,
+   "archetype": "Alakazam（156952a871=Majkel型レプリカ、EXP-084。n=1576/45.7%の現行主流個体。vs038で真値-0.5pt一致。旧代表045[81f1、n=211に凋落]から交代）"
+  },
+  {
+   "dir": "agents/083_spidops_d583",
+   "weight": 13.1,
+   "archetype": "Team Rocket's Spidops（d5834c603aレプリカ、EXP-083。n=634/53.5%。3ゲート全合格。Articuno VeilがPowerful Hand無効化するAlakazam構造カウンター[個体対戦94%]）"
+  },
+  {
+   "dir": "agents/041_garchomp_replica",
+   "weight": 8.5,
+   "archetype": "Cynthia's Garchomp ex（fc15d0c926レプリカ、EXP-041。同一個体が07-22でもトップ709戦57.4%で続投。既知乖離: 対壁でDraconic Busterを実物パイロットより使いすぎ=対Kangaskhan系が実勢と逆転、EXP-085）"
+  },
+  {
+   "dir": "agents/085_kangaskhan_e57e",
+   "weight": 8.1,
+   "archetype": "Mega Kangaskhan ex（e57eb95734レプリカ、EXP-085。n=440/46.5%の現行トップ。vs045真値±1pt合格、対面別アタッカー使い分け実装。旧代表047[b7cef、n=60に凋落]から交代）"
+  },
+  {
+   "dir": "agents/086_lopunny_53db",
+   "weight": 4.5,
+   "archetype": "Mega Lopunny ex（53db4c87b8レプリカ、EXP-086。n=257/56.0%。メガ2体入替ダンス+Gale Thrust 230。vs041/vs045ゲートは許容圏、vs082のみ-24pt既知乖離）"
+  },
+  {
+   "dir": "agents/021_dragapult_sample",
+   "weight": 4.3,
+   "archetype": "Dragapult ex（公式方策）。**未較正のまま続投**（087レプリカ=75cb2ab957はゲート不合格でrejected。本番対面値は+17pt甘い前提で解釈すること）"
+  },
+  {
+   "dir": "agents/000_random",
+   "weight": 10.8,
+   "archetype": "random（本番10%ランダム対戦。カバー率96.8/9≈10.8）"
+  }
+ ]
+}

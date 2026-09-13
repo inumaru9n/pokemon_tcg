@@ -1,0 +1,151 @@
+
+### turn 0
+  ME  prz=0 deck=60 | ACT (facedown) | BENCH - | hand: (0)
+  OPP prz=0 deck=60 | ACT (facedown) | BENCH - | hand: (0)
+  [IS_FIRST 1/2] YES
+  [SETUP_ACTIVE_POKEMON 1/1] CARD my HAND Fezandipiti ex
+
+### turn 1
+  ME  prz=6 deck=46 | ACT Fezandipiti ex[210/210] | BENCH - | hand: Basic {P} Energy Boss’s Orders Buddy-Buddy Poffin Crushing Hammer Dragapult ex Dragapult ex Unfair Stamp
+  OPP prz=6 deck=47 | ACT Shaymin[80/80] | BENCH - | hand: (6)
+  [MAIN 1/3] PLAY Buddy-Buddy Poffin
+  [TO_BENCH 2/6] CARD DECK[4]p0 | CARD DECK[12]p0
+  [MAIN 1/4] ATTACH hand[4] -> BENCH[0]
+  [MAIN 1/1] END
+
+### turn 3
+  ME  prz=6 deck=43 | ACT Dreepy[70/70 E:5] | BENCH Fezandipiti ex[210/210] Dreepy[70/70] | hand: Basic {R} Energy Boss’s Orders Crushing Hammer Dragapult ex Dragapult ex Unfair Stamp
+  OPP prz=6 deck=46 | ACT Shaymin[80/80] | BENCH - | hand: (6)
+  [MAIN 1/6] ATTACH hand[5] -> BENCH[1]
+  [MAIN 1/3] ATTACK Petty Grudge
+
+### turn 5
+  ME  prz=6 deck=42 | ACT Dreepy[70/70 E:5] | BENCH Fezandipiti ex[210/210] Dreepy[70/70 E:2] | hand: Boss’s Orders Crushing Hammer Dragapult ex Dragapult ex Team Rocket's Watchtower Unfair Stamp
+  OPP prz=6 deck=42 | ACT Shaymin[70/80] | BENCH Abra[50/50] Abra[50/50] | hand: (7)
+  [MAIN 1/5] PLAY Team Rocket's Watchtower
+  [MAIN 1/4] ATTACK Petty Grudge
+
+### turn 7
+  ME  prz=6 deck=41 | ACT Dreepy[70/70 E:5] | BENCH Fezandipiti ex[210/210] Dreepy[70/70 E:2] | hand: Boss’s Orders Crushing Hammer Dragapult ex Dragapult ex Munkidori Unfair Stamp
+  OPP prz=6 deck=31 | ACT Shaymin[60/80 E:5] | BENCH Alakazam[140/140] Kadabra[80/80] Abra[50/50] Abra[50/50] Fezandipiti ex[210/210] | hand: (8)
+  [MAIN 1/6] PLAY Munkidori
+  [MAIN 1/5] PLAY Crushing Hammer
+  [DISCARD_ENERGY 1/1] ENERGY ACTIVE[0]p1
+  [MAIN 1/4] ATTACK Petty Grudge
+
+### turn 9
+  ME  prz=6 deck=40 | ACT Fezandipiti ex[210/210] | BENCH Dreepy[70/70 E:5] Dreepy[70/70 E:2] Munkidori[110/110] | hand: Boss’s Orders Dragapult ex Dragapult ex Dragapult ex Unfair Stamp
+  OPP prz=6 deck=21 | ACT Shaymin[50/80] | BENCH Alakazam[140/140] Alakazam[140/140] Kadabra[80/80] Kadabra[80/80] Fezandipiti ex[210/210] | hand: (12)
+  [MAIN 1/2] END
+
+### turn 11
+  ME  prz=6 deck=39 | ACT Fezandipiti ex[210/210] | BENCH Dreepy[70/70 E:5] Dreepy[70/70 E:2] Munkidori[110/110] | hand: Boss’s Orders Dragapult ex Dragapult ex Dragapult ex Ultra Ball Unfair Stamp
+  OPP prz=6 deck=12 | ACT Shaymin[50/80 E:5] | BENCH Alakazam[140/140] Alakazam[140/140] Alakazam[140/140] Alakazam[140/140] Fezandipiti ex[210/210] | hand: (16)
+  [MAIN 1/3] PLAY Ultra Ball
+  [DISCARD 2/5] CARD my HAND Dragapult ex | CARD my HAND Dragapult ex
+  [TO_HAND 1/12] CARD DECK[18]p0
+  [MAIN 1/3] PLAY Meowth ex
+  [ACTIVATE 1/2] YES
+  [TO_HAND 1/9] CARD DECK[2]p0
+  [MAIN 1/3] PLAY Lillie's Determination
+  [MAIN 1/8] PLAY Dreepy
+  [MAIN 1/4] EVOLVE hand[2] onto BENCH[0]
+  [MAIN 1/3] ABILITY BENCH[0]
+  [TO_HAND 1/2] CARD LOOKING[0]p0
+  [MAIN 1/3] EVOLVE hand[6] onto BENCH[1]
+  [MAIN 1/3] ABILITY BENCH[1]
+  [TO_HAND 1/2] CARD LOOKING[0]p0
+  [MAIN 1/3] END
+
+### turn 12
+  ME  prz=6 deck=30 | ACT Fezandipiti ex[210/210] | BENCH Drakloak[90/90 E:5] Drakloak[90/90 E:2] Munkidori[110/110] Meowth ex[170/170] Dreepy[70/70] | hand: Boss’s Orders Buddy-Buddy Poffin Buddy-Buddy Poffin Crispin Duskull Night Stretcher Ultra Ball
+  OPP prz=6 deck=6 | ACT Shaymin[50/80 E:5] | BENCH Alakazam[140/140] Alakazam[140/140] Alakazam[140/140] Alakazam[140/140] Fezandipiti ex[210/210 E:0] | hand: (19)
+  [DISCARD 4/7] CARD my HAND Buddy-Buddy Poffin | CARD my HAND Boss’s Orders | CARD my HAND Buddy-Buddy Poffin | CARD my HAND Ultra Ball
+
+### turn 13
+  ME  prz=6 deck=29 | ACT Fezandipiti ex[210/210] | BENCH Drakloak[90/90 E:5] Drakloak[90/90 E:2] Munkidori[110/110] Meowth ex[170/170] Dreepy[70/70] | hand: Crispin Duskull Night Stretcher Team Rocket's Watchtower
+  OPP prz=6 deck=6 | ACT Shaymin[50/80 E:5] | BENCH Alakazam[140/140] Alakazam[140/140] Alakazam[140/140] Alakazam[140/140] Fezandipiti ex[210/210 E:0] | hand: (19)
+  [MAIN 1/6] PLAY Team Rocket's Watchtower
+  [MAIN 1/5] PLAY Night Stretcher
+  [TO_HAND 1/2] CARD my DISC Dragapult ex
+  [MAIN 1/6] EVOLVE hand[2] onto BENCH[0]
+  [MAIN 1/3] ABILITY BENCH[1]
+  [TO_HAND 1/2] CARD LOOKING[1]p0
+  [MAIN 1/8] PLAY Crispin
+  [TO_HAND 1/4] CARD DECK[8]p0
+  [ATTACH_TO 1/3] CARD DECK[6]p0
+  [ATTACH_FROM 1/6] CARD my BENCH Dragapult ex[320/320 E:5]
+  [MAIN 1/13] ATTACH hand[1] -> ACTIVE[0]
+  [MAIN 1/2] RETREAT
+  [DISCARD_ENERGY 1/1] ENERGY ACTIVE[0]p0
+  [SWITCH 1/5] CARD my BENCH Dragapult ex[320/320 E:52]
+  [MAIN 1/3] ATTACK Phantom Dive
+  [DAMAGE_COUNTER_ANY 1/5] CARD opp BENCH Alakazam[140/140]
+  [DAMAGE_COUNTER_ANY 1/5] CARD opp BENCH Alakazam[130/140]
+  [DAMAGE_COUNTER_ANY 1/5] CARD opp BENCH Alakazam[120/140]
+  [DAMAGE_COUNTER_ANY 1/5] CARD opp BENCH Alakazam[110/140]
+  [DAMAGE_COUNTER_ANY 1/5] CARD opp BENCH Alakazam[100/140]
+  [DAMAGE_COUNTER_ANY 1/5] CARD opp BENCH Alakazam[90/140]
+  [TO_HAND 1/6] CARD PRIZE[0]p0
+
+### turn 14
+  ME  prz=5 deck=26 | ACT (facedown) | BENCH Fezandipiti ex[210/210] Drakloak[90/90 E:2] Munkidori[110/110] Meowth ex[170/170] Dreepy[70/70] | hand: Basic {P} Energy Duskull Lillie's Determination
+  OPP prz=4 deck=5 | ACT Alakazam[80/140 E:5] | BENCH Alakazam[140/140] Alakazam[140/140] Alakazam[140/140] Fezandipiti ex[210/210 E:0] Dunsparce[70/70] | hand: (18)
+  [TO_ACTIVE 1/5] CARD my BENCH Drakloak[90/90 E:2]
+
+### turn 15
+  ME  prz=5 deck=25 | ACT Drakloak[90/90 E:2] | BENCH Fezandipiti ex[210/210] Munkidori[110/110] Meowth ex[170/170] Dreepy[70/70] | hand: Basic {P} Energy Boss’s Orders Duskull Lillie's Determination
+  OPP prz=4 deck=5 | ACT Alakazam[80/140 E:5] | BENCH Alakazam[140/140] Alakazam[140/140] Alakazam[140/140] Fezandipiti ex[210/210 E:0] Dunsparce[70/70] | hand: (18)
+  [MAIN 1/12] PLAY Duskull
+  [MAIN 1/12] ABILITY ACTIVE[0]
+  [TO_HAND 1/2] CARD LOOKING[1]p0
+  [MAIN 1/12] PLAY Poké Pad
+  [TO_HAND 1/7] CARD DECK[3]p0
+  [MAIN 1/12] ABILITY BENCH[0]
+  [MAIN 1/19] PLAY Poké Pad
+  [TO_HAND 1/6] CARD DECK[11]p0
+  [MAIN 1/18] EVOLVE hand[3] onto BENCH[3]
+  [MAIN 1/18] ABILITY BENCH[3]
+  [TO_HAND 1/2] CARD LOOKING[0]p0
+  [MAIN 1/18] ATTACH hand[3] -> BENCH[1]
+  [MAIN 1/6] PLAY Lillie's Determination
+  [MAIN 1/3] END
+
+### turn 16
+  ME  prz=5 deck=17 | ACT (facedown) | BENCH Fezandipiti ex[210/210] Munkidori[110/110 E:7] Meowth ex[170/170] Drakloak[90/90] Duskull[60/60] | hand: Crispin Dawn Drakloak Lillie's Determination Moltres Ultra Ball
+  OPP prz=3 deck=3 | ACT Alakazam[80/140 E:5] | BENCH Alakazam[140/140 E:5] Alakazam[140/140] Alakazam[140/140] Fezandipiti ex[210/210 E:0] Dudunsparce[140/140] | hand: (18)
+  [TO_ACTIVE 1/5] CARD my BENCH Duskull[60/60]
+
+### turn 17
+  ME  prz=5 deck=16 | ACT Duskull[60/60] | BENCH Fezandipiti ex[210/210] Munkidori[110/110 E:7] Meowth ex[170/170] Drakloak[90/90] | hand: Budew Crispin Dawn Drakloak Lillie's Determination Moltres Ultra Ball
+  OPP prz=3 deck=3 | ACT Alakazam[80/140 E:5] | BENCH Alakazam[140/140 E:5] Alakazam[140/140] Alakazam[140/140] Fezandipiti ex[210/210 E:0] Dudunsparce[140/140] | hand: (18)
+  [MAIN 1/9] PLAY Budew
+  [MAIN 1/7] ABILITY BENCH[0]
+  [MAIN 1/9] EVOLVE hand[8] onto BENCH[3]
+  [MAIN 1/7] PLAY Night Stretcher
+  [TO_HAND 1/10] CARD my DISC Dreepy
+  [MAIN 1/6] PLAY Crispin
+  [TO_HAND 1/2] CARD DECK[1]p0
+  [ATTACH_TO 1/1] CARD DECK[2]p0
+  [ATTACH_FROM 1/6] CARD my BENCH Dragapult ex[320/320]
+  [MAIN 1/9] EVOLVE hand[5] onto ACTIVE[0]
+  [MAIN 1/9] ATTACH hand[6] -> BENCH[3]
+  [MAIN 1/3] END
+
+### turn 18
+  ME  prz=5 deck=11 | ACT (facedown) | BENCH Fezandipiti ex[210/210] Munkidori[110/110 E:7] Meowth ex[170/170] Dusclops[90/90] Budew[30/30] | hand: Dawn Drakloak Dreepy Lillie's Determination Moltres Ultra Ball
+  OPP prz=1 deck=2 | ACT Alakazam[80/140 E:5] | BENCH Alakazam[140/140 E:5] Alakazam[140/140 E:5] Alakazam[140/140] Fezandipiti ex[210/210 E:0] Dudunsparce[140/140] | hand: (19)
+  [TO_ACTIVE 1/5] CARD my BENCH Budew[30/30]
+
+### turn 19
+  ME  prz=5 deck=10 | ACT Budew[30/30] | BENCH Fezandipiti ex[210/210] Munkidori[110/110 E:7] Meowth ex[170/170] Dusclops[90/90] | hand: Dawn Drakloak Dreepy Lillie's Determination Moltres Poké Pad Ultra Ball
+  OPP prz=1 deck=2 | ACT Alakazam[80/140 E:5] | BENCH Alakazam[140/140 E:5] Alakazam[140/140 E:5] Alakazam[140/140] Fezandipiti ex[210/210 E:0] Dudunsparce[140/140] | hand: (19)
+  [MAIN 1/11] PLAY Dreepy
+  [MAIN 1/9] PLAY Poké Pad
+  [TO_HAND 1/2] CARD DECK[6]p0
+  [MAIN 1/8] ABILITY BENCH[0]
+  [MAIN 1/10] PLAY Crushing Hammer
+  [DISCARD_ENERGY 1/4] ENERGY BENCH[3]p1
+  [MAIN 1/9] PLAY Lillie's Determination
+  [MAIN 1/5] ATTACK Itchy Pollen
+##### RESULT: OPP WINS

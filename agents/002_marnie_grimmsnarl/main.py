@@ -15,7 +15,10 @@ Game plan:
 """
 
 # Load deck.csv in the dataset
-file_path = os.path.join(os.path.dirname(os.path.abspath(__file__)), "deck.csv")
+try:  # Kaggle評価環境はexecロードのため __file__ が無い
+    file_path = os.path.join(os.path.dirname(os.path.abspath(__file__)), "deck.csv")
+except NameError:
+    file_path = "deck.csv"
 if not os.path.exists(file_path):
     file_path = "/kaggle_simulations/agent/deck.csv"
 with open(file_path, "r") as file:

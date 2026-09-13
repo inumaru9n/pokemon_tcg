@@ -6,6 +6,10 @@
 - プール内の各相手と n 戦ずつ対戦（候補自身がプールにいる場合はスキップ）
 - 総合勝率はプール定義の weight（本番メタシェア）で加重平均し、95%CIを正規近似で算出
 - 判定目安: 加重CI下限 > 50% で validated、上限 < 50% で rejected（詳細はCLAUDE.mdの統計基準）
+- **候補どうしを比較するときは `--engine-seed` に同じ値を必ず指定する**（CRN）。
+  指定しないと各実行が独立標本になり、**その対面で完全に同一の手を打つ2エージェントですら
+  45.0% と 52.2%（差7.2pt・z>2）に分かれる**ことを実測している（EXP-106）。
+  重み最大の枠でこれが起きると、プール総合の差はほぼその1枠のノイズで決まってしまう。
 """
 
 from __future__ import annotations
@@ -31,6 +35,11 @@ def main() -> None:
     ap.add_argument("-w", "--workers", type=int, default=max(1, (os.cpu_count() or 2) - 1))
     ap.add_argument("--step-cap", type=int, default=30000)
     ap.add_argument("--seed", type=int, default=42)
+    ap.add_argument("--engine-seed", type=int, default=None, dest="engine_seed",
+                    help="CRNの基準シード。**候補間の比較には必ず同じ値を指定する**。"
+                         "省略するとエンジンのシードが実行ごとに変わり、"
+                         "同一の手を打つ2エージェントですら対面で±7pt動く"
+                         "（実測: 対Marnieで45.0%%と52.2%%＝z>2、機序上の差はゼロ）")
     ap.add_argument("--pool", default=DEFAULT_POOL)
     ap.add_argument("--json", dest="json_path", default=None)
     args = ap.parse_args()
@@ -47,7 +56,7 @@ def main() -> None:
     for o in opponents:
         opp_dir = os.path.join(REPO_ROOT, o["dir"])
         s = run_series(args.candidate, opp_dir, args.games, args.workers,
-                       args.step_cap, args.seed)
+                       args.step_cap, args.seed, args.engine_seed)
         s["opponent"] = o["dir"]
         s["weight"] = o["weight"]
         s["archetype"] = o.get("archetype", "")
@@ -80,6 +89,7 @@ def main() -> None:
         "errors": errors,
         "verdict": verdict,
         "seed": args.seed,
+        "engine_seed": args.engine_seed,
         "matchups": matchups,
     }
     if args.json_path:

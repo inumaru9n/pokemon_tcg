@@ -1,0 +1,89 @@
+
+### turn 0
+  ME  prz=0 deck=53 | ACT (facedown) | BENCH - | hand: Basic {R} Energy Crispin Dreepy Lillie's Determination Munkidori Ultra Ball Unfair Stamp
+  OPP prz=0 deck=53 | ACT (facedown) | BENCH - | hand: (6)
+  [SETUP_ACTIVE_POKEMON 1/2] CARD my HAND Dreepy
+  [SETUP_BENCH_POKEMON 0/1] 
+
+### turn 2
+  ME  prz=6 deck=46 | ACT Dreepy[70/70] | BENCH - | hand: Basic {R} Energy Buddy-Buddy Poffin Crispin Lillie's Determination Munkidori Ultra Ball Unfair Stamp
+  OPP prz=6 deck=41 | ACT Abra[50/50] | BENCH Shaymin[80/80] Abra[50/50] Abra[50/50] Abra[50/50] Dunsparce[70/70] | hand: (4)
+  [MAIN 1/7] PLAY Buddy-Buddy Poffin
+  [TO_BENCH 2/5] CARD DECK[44]p1 | CARD DECK[12]p1
+  [MAIN 1/8] ATTACH hand[2] -> BENCH[1]
+  [MAIN 1/5] PLAY Lillie's Determination
+  [MAIN 1/1] END
+
+### turn 4
+  ME  prz=6 deck=39 | ACT Dreepy[70/70] | BENCH Budew[30/30] Dreepy[70/70 E:2] | hand: Basic {P} Energy Crispin Crispin Crushing Hammer Dawn Dragapult ex Dusclops Lillie's Determination Night Stretcher
+  OPP prz=6 deck=26 | ACT Kadabra[80/80] | BENCH Shaymin[80/80] Kadabra[80/80] Abra[50/50] Abra[50/50] Dunsparce[70/70 E:0] | hand: (12)
+  [MAIN 1/9] PLAY Crushing Hammer
+  [MAIN 1/8] ATTACH hand[7] -> ACTIVE[0]
+  [MAIN 1/7] PLAY Lillie's Determination
+  [MAIN 1/12] PLAY Buddy-Buddy Poffin
+  [TO_BENCH 2/3] CARD DECK[3]p1 | CARD DECK[5]p1
+  [MAIN 1/11] PLAY Poké Pad
+  [TO_HAND 1/6] CARD DECK[32]p1
+  [MAIN 1/10] EVOLVE hand[2] onto ACTIVE[0]
+  [MAIN 1/7] ABILITY ACTIVE[0]
+  [TO_HAND 1/2] CARD LOOKING[0]p1
+  [MAIN 1/6] EVOLVE hand[2] onto BENCH[1]
+  [MAIN 1/6] ABILITY BENCH[1]
+  [TO_HAND 1/2] CARD LOOKING[1]p1
+  [MAIN 1/5] RETREAT
+  [DISCARD_ENERGY 1/1] ENERGY ACTIVE[0]p1
+  [SWITCH 1/4] CARD my BENCH Budew[30/30]
+  [MAIN 1/5] ATTACK Itchy Pollen
+
+### turn 5
+  ME  prz=6 deck=32 | ACT (facedown) | BENCH Budew[30/30] Drakloak[90/90 E:2] Dreepy[70/70] Duskull[60/60] | hand: Boss’s Orders Crispin Dragapult ex Dusknoir Munkidori Team Rocket's Watchtower Ultra Ball
+  OPP prz=5 deck=22 | ACT Alakazam[130/140 E:5] | BENCH Shaymin[80/80] Kadabra[80/80] Abra[50/50] Abra[50/50] Dunsparce[70/70] | hand: (15)
+  [TO_ACTIVE 1/4] CARD my BENCH Budew[30/30]
+
+### turn 6
+  ME  prz=6 deck=31 | ACT Budew[30/30] | BENCH Drakloak[90/90 E:2] Dreepy[70/70] Duskull[60/60] | hand: Boss’s Orders Crispin Dragapult ex Dusclops Dusknoir Munkidori Team Rocket's Watchtower Ultra Ball
+  OPP prz=5 deck=22 | ACT Alakazam[130/140 E:5] | BENCH Shaymin[80/80] Kadabra[80/80] Abra[50/50] Abra[50/50] Dunsparce[70/70] | hand: (15)
+  [MAIN 1/11] EVOLVE hand[6] onto BENCH[0]
+  [MAIN 1/9] PLAY Crispin
+  [TO_HAND 1/6] CARD DECK[2]p1
+  [ATTACH_TO 1/5] CARD DECK[4]p1
+  [ATTACH_FROM 1/4] CARD my BENCH Dreepy[70/70]
+  [MAIN 1/11] EVOLVE hand[5] onto BENCH[2]
+  [MAIN 1/11] ATTACK Itchy Pollen
+
+### turn 7
+  ME  prz=6 deck=29 | ACT (facedown) | BENCH Budew[30/30] Dreepy[70/70 E:2] Dusclops[90/90] | hand: Basic {D} Energy Boss’s Orders Dusknoir Munkidori Team Rocket's Watchtower Ultra Ball
+  OPP prz=3 deck=15 | ACT Alakazam[120/140 E:5] | BENCH Shaymin[80/80] Alakazam[140/140 E:5] Kadabra[80/80] Abra[50/50] Dunsparce[70/70] | hand: (19)
+  [TO_ACTIVE 1/3] CARD my BENCH Budew[30/30]
+
+### turn 8
+  ME  prz=6 deck=28 | ACT Budew[30/30] | BENCH Dreepy[70/70 E:2] Dusclops[90/90] | hand: Basic {D} Energy Boss’s Orders Dragapult ex Dusknoir Munkidori Team Rocket's Watchtower Ultra Ball
+  OPP prz=3 deck=15 | ACT Alakazam[120/140 E:5] | BENCH Shaymin[80/80] Alakazam[140/140 E:5] Kadabra[80/80] Abra[50/50] Dunsparce[70/70] | hand: (19)
+  [MAIN 1/12] PLAY Team Rocket's Watchtower
+  [MAIN 1/11] EVOLVE hand[2] onto BENCH[1]
+  [MAIN 1/10] ATTACK Itchy Pollen
+
+### turn 9
+  ME  prz=6 deck=28 | ACT (facedown) | BENCH Dreepy[70/70 E:2] Dusknoir[160/160] | hand: Basic {D} Energy Boss’s Orders Dragapult ex Munkidori Ultra Ball
+  OPP prz=2 deck=10 | ACT Alakazam[110/140 E:5] | BENCH Shaymin[80/80] Alakazam[140/140 E:5] Alakazam[140/140 E:5] Kadabra[80/80] Dunsparce[70/70] | hand: (20)
+  [TO_ACTIVE 1/2] CARD my BENCH Dreepy[70/70 E:2]
+
+### turn 10
+  ME  prz=6 deck=27 | ACT Dreepy[70/70 E:2] | BENCH Dusknoir[160/160] | hand: Basic {D} Energy Basic {P} Energy Boss’s Orders Dragapult ex Munkidori Ultra Ball
+  OPP prz=2 deck=10 | ACT Alakazam[110/140 E:5] | BENCH Shaymin[80/80] Alakazam[140/140 E:5] Alakazam[140/140 E:5] Kadabra[80/80] Dunsparce[70/70] | hand: (20)
+  [MAIN 1/10] ATTACH hand[5] -> ACTIVE[0]
+  [MAIN 1/8] ATTACK Bite
+
+### turn 11
+  ME  prz=6 deck=27 | ACT (facedown) | BENCH Dusknoir[160/160] | hand: Basic {D} Energy Boss’s Orders Dragapult ex Munkidori Ultra Ball
+  OPP prz=1 deck=7 | ACT Alakazam[70/140 E:5] | BENCH Shaymin[80/80] Alakazam[140/140 E:5] Alakazam[140/140 E:5] Alakazam[140/140 E:5] Dudunsparce[140/140] | hand: (20)
+  [TO_ACTIVE 1/1] CARD my BENCH Dusknoir[160/160]
+
+### turn 12
+  ME  prz=6 deck=26 | ACT Dusknoir[160/160] | BENCH - | hand: Basic {D} Energy Boss’s Orders Dragapult ex Munkidori Night Stretcher Ultra Ball
+  OPP prz=1 deck=7 | ACT Alakazam[70/140 E:5] | BENCH Shaymin[80/80] Alakazam[140/140 E:5] Alakazam[140/140 E:5] Alakazam[140/140 E:5] Dudunsparce[140/140] | hand: (20)
+  [MAIN 1/7] PLAY Night Stretcher
+  [TO_HAND 1/11] CARD my DISC Budew
+  [MAIN 1/7] PLAY Budew
+  [MAIN 1/7] END
+##### RESULT: OPP WINS

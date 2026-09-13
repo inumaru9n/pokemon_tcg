@@ -40,6 +40,30 @@ def battle_start(deck0: list[int], deck1: list[int]) -> tuple[dict, StartData]:
         return (_get_battle_data(), start_data)
 
 
+def battle_start_seeded(deck0: list[int], deck1: list[int], seed: int) -> tuple[dict, StartData]:
+    """Start the battle with a fixed engine RNG seed (CRN evaluation; local build only).
+
+    Same as battle_start but all in-engine randomness (deck shuffles, coin
+    flips, target shuffles) is driven by mt19937(seed) instead of
+    std::random_device, so identical (decks, seed, action sequence) replays
+    identically. Requires the locally built libcg with cg/Export_seeded.cpp.
+    """
+    from .sim import HAS_SEEDED_START
+    if not HAS_SEEDED_START:
+        raise RuntimeError("loaded libcg has no BattleStartSeeded "
+                           "(rebuild with cg/Export_seeded.cpp)")
+    if len(deck0) != 60 or len(deck1) != 60:
+        raise ValueError("The deck must contain 60 cards.")
+    cards = deck0 + deck1
+    arg = (ctypes.c_int * len(cards))(*cards)
+    start_data = lib.BattleStartSeeded(arg, ctypes.c_uint(seed & 0xFFFFFFFF))
+    Battle.battle_ptr = start_data.battlePtr
+    if Battle.battle_ptr == None or Battle.battle_ptr == 0:
+        return (None, start_data)
+    else:
+        return (_get_battle_data(), start_data)
+
+
 def battle_finish():
     """End the battle and free the memory used during it."""
     lib.BattleFinish(Battle.battle_ptr)

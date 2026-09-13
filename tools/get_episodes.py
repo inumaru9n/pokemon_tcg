@@ -53,7 +53,8 @@ def _card_table() -> dict[int, dict]:
             "name": c.name,
             "is_pokemon": c.cardType == 0,
             "stage": 2 if c.stage2 else (1 if c.stage1 else 0),
-            "ex": c.ex or c.megaEx,
+            "mega": c.megaEx,
+            "ex": c.ex,
         }
     return table
 
@@ -61,7 +62,11 @@ def _card_table() -> dict[int, dict]:
 def classify_deck(card_ids: list[int], table: dict[int, dict]) -> str:
     """デッキの看板ポケモンを推定してアーキタイプ名とする簡易ヒューリスティック。
 
-    採用基準: 進化段階が高い > ex/mega > 採用枚数が多い。誤分類率は未検証。
+    採用基準: megaEx > 進化段階が高い > ex > 採用枚数が多い。megaExを最優先にする理由は
+    Mega Starmie ex（Staryuからのstage1進化）が同居するstage2ポケモンに看板を奪われる誤分類を
+    避けるため（EXP-017で発覚。megaExはサイド3枚・高HPでほぼ確実にデッキの主軸）。
+    stageをexより優先するのは、stage2の主軸（例: Alakazam）がテックのbasic ex（例: Fezandipiti ex）に
+    看板を奪われるのを防ぐため。誤分類率は未検証。
     """
     counts = Counter(card_ids)
     best = None
@@ -69,7 +74,7 @@ def classify_deck(card_ids: list[int], table: dict[int, dict]) -> str:
         c = table.get(cid)
         if not c or not c["is_pokemon"]:
             continue
-        key = (c["stage"], c["ex"], n)
+        key = (c["mega"], c["stage"], c["ex"], n)
         if best is None or key > best[0]:
             best = (key, c["name"])
     return best[1] if best else "unknown"

@@ -40,8 +40,11 @@ def list_all_topics() -> list[dict]:
     topics = []
     page = 1
     while True:
-        batch = kaggle_json(["competitions", "topics", "list", COMPETITION,
-                             "--format", "json", "-p", str(page)])
+        try:
+            batch = kaggle_json(["competitions", "topics", "list", COMPETITION,
+                                 "--format", "json", "-p", str(page)])
+        except Exception:
+            break  # 最終ページを越えると "No topics found"（非JSON）が返る
         if isinstance(batch, dict):
             batch = batch.get("items") or batch.get("topics") or []
         if not batch:

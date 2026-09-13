@@ -1,0 +1,501 @@
+# episode 87371187, ME = player 0 (Starmie/Cinderace 491b)
+
+### turn 0 (first=-1) board:
+  ME  prz=0 deck=60 | ACT (facedown) | BENCH -
+      hand: (0 cards)
+  OPP prz=0 deck=60 | ACT (facedown) | BENCH -
+      hand: (0 cards)
+  >> [t0 IS_FIRST 1/2] YES
+ME draws Night Stretcher
+ME draws Drakloak
+ME draws Drakloak
+ME draws Buddy-Buddy Poffin
+ME draws Moltres
+ME draws Dusclops
+ME draws Team Rocket's Watchtower
+OPP draws a card
+OPP draws a card
+OPP draws a card
+OPP draws a card
+OPP draws a card
+OPP draws a card
+OPP draws a card
+  >> [t0 SETUP_ACTIVE_POKEMON 1/1] CARD my HAND[4] Moltres
+ME moves Moltres: HAND -> ACTIVE
+OPP moves facedown card: HAND -> ACTIVE
+ME moves facedown card: DECK -> PRIZE
+ME moves facedown card: DECK -> PRIZE
+ME moves facedown card: DECK -> PRIZE
+ME moves facedown card: DECK -> PRIZE
+ME moves facedown card: DECK -> PRIZE
+ME moves facedown card: DECK -> PRIZE
+OPP moves facedown card: DECK -> PRIZE
+OPP moves facedown card: DECK -> PRIZE
+OPP moves facedown card: DECK -> PRIZE
+OPP moves facedown card: DECK -> PRIZE
+OPP moves facedown card: DECK -> PRIZE
+OPP moves facedown card: DECK -> PRIZE
+===== TURN START (ME) =====
+ME draws Boss’s Orders
+
+### turn 1 (first=0) board:
+  ME  prz=6 deck=46 | ACT Moltres[120/120] | BENCH -
+      hand: Boss’s Orders Buddy-Buddy Poffin Drakloak Drakloak Dusclops Night Stretcher Team Rocket's Watchtower
+  OPP prz=6 deck=47 | ACT Abra[50/50] | BENCH -
+      hand: (6 cards)
+  >> [t1 MAIN 1/3] PLAY Buddy-Buddy Poffin
+ME PLAYS Buddy-Buddy Poffin
+  >> [t1 TO_BENCH 2/6] CARD my DECK[6] DECK[6]p0 | CARD my DECK[19] DECK[19]p0
+ME moves Duskull: DECK -> BENCH
+ME moves Dreepy: DECK -> BENCH
+  >> [t1 MAIN 1/2] PLAY Team Rocket's Watchtower
+ME PLAYS Team Rocket's Watchtower
+  >> [t1 MAIN 1/1] END TURN
+----- turn end (ME)
+===== TURN START (OPP) =====
+OPP draws a card
+OPP PLAYS Poké Pad
+OPP moves Abra: DECK -> HAND
+OPP PLAYS Abra
+OPP attaches Basic {P} Energy -> Abra
+OPP *** ATTACK: Abra uses Teleportation Attack(10) ***
+    ME Moltres HP -10
+OPP switches: Abra out, Abra in
+----- turn end (OPP)
+===== TURN START (ME) =====
+ME draws Team Rocket's Watchtower
+
+### turn 3 (first=0) board:
+  ME  prz=6 deck=43 | ACT Moltres[110/120] | BENCH Duskull[60/60] Dreepy[70/70]
+      hand: Boss’s Orders Drakloak Drakloak Dusclops Night Stretcher Team Rocket's Watchtower
+  OPP prz=6 deck=45 | ACT Abra[50/50] | BENCH Abra[50/50 E:PS]
+      hand: (5 cards)
+  >> [t3 MAIN 1/5] EVOLVE Drakloak onto Dreepy[70/70]
+ME EVOLVES Dreepy -> Drakloak
+  >> [t3 MAIN 1/4] ABILITY of Drakloak[90/90]
+ME moves Poké Pad: DECK -> LOOKING
+ME moves Buddy-Buddy Poffin: DECK -> LOOKING
+  >> [t3 TO_HAND 1/2] CARD my LOOKING[1] Buddy-Buddy Poffin
+ME moves Buddy-Buddy Poffin: LOOKING -> HAND
+ME moves Poké Pad: LOOKING -> ?
+  >> [t3 MAIN 1/4] PLAY Buddy-Buddy Poffin
+ME PLAYS Buddy-Buddy Poffin
+  >> [t3 TO_BENCH 2/4] CARD my DECK[9] DECK[9]p0 | CARD my DECK[29] DECK[29]p0
+ME moves Dreepy: DECK -> BENCH
+ME moves Duskull: DECK -> BENCH
+  >> [t3 MAIN 1/3] EVOLVE Dusclops onto Duskull[60/60]
+ME EVOLVES Duskull -> Dusclops
+  >> [t3 MAIN 1/3] PLAY Boss’s Orders
+ME PLAYS Boss’s Orders
+  >> [t3 SWITCH 1/1] CARD opp BENCH[0] Abra[50/50 E:PS]
+OPP switches: Abra out, Abra in
+  >> [t3 MAIN 1/2] END TURN
+----- turn end (ME)
+===== TURN START (OPP) =====
+OPP draws a card
+OPP EVOLVES Abra -> Kadabra
+OPP draws a card
+OPP draws a card
+OPP PLAYS Rare Candy
+OPP EVOLVES Abra -> Alakazam
+OPP draws a card
+OPP draws a card
+OPP draws a card
+OPP PLAYS Abra
+OPP PLAYS Dawn
+OPP moves Fezandipiti ex: DECK -> HAND
+OPP moves Kadabra: DECK -> HAND
+OPP moves Alakazam: DECK -> HAND
+OPP PLAYS Fezandipiti ex
+OPP PLAYS Dunsparce
+OPP attaches Basic {P} Energy -> Kadabra
+OPP *** ATTACK: Alakazam uses Powerful Hand(0) ***
+    ME Moltres damage counters -120
+ME moves Moltres: ACTIVE -> DISCARD
+OPP moves facedown card: PRIZE -> HAND
+
+### turn 4 (first=0) board:
+  ME  prz=6 deck=40 | ACT (facedown) | BENCH Dusclops[90/90] Drakloak[90/90] Dreepy[70/70] Duskull[60/60]
+      hand: Drakloak Night Stretcher Team Rocket's Watchtower
+  OPP prz=5 deck=36 | ACT Alakazam[140/140 E:PS] | BENCH Kadabra[80/80 E:PS] Abra[50/50] Fezandipiti ex[210/210] Dunsparce[70/70]
+      hand: (7 cards)
+  >> [t4 TO_ACTIVE 1/4] CARD my BENCH[1] Drakloak[90/90]
+ME moves Drakloak: BENCH -> ACTIVE
+----- turn end (OPP)
+===== TURN START (ME) =====
+ME draws Dragapult ex
+
+### turn 5 (first=0) board:
+  ME  prz=6 deck=39 | ACT Drakloak[90/90] | BENCH Dusclops[90/90] Dreepy[70/70] Duskull[60/60]
+      hand: Dragapult ex Drakloak Night Stretcher Team Rocket's Watchtower
+  OPP prz=5 deck=36 | ACT Alakazam[140/140 E:PS] | BENCH Kadabra[80/80 E:PS] Abra[50/50] Fezandipiti ex[210/210] Dunsparce[70/70]
+      hand: (7 cards)
+  >> [t5 MAIN 1/6] ABILITY of Drakloak[90/90]
+ME moves Poké Pad: DECK -> LOOKING
+ME moves Basic {R} Energy: DECK -> LOOKING
+  >> [t5 TO_HAND 1/2] CARD my LOOKING[0] Poké Pad
+ME moves Poké Pad: LOOKING -> HAND
+ME moves Basic {R} Energy: LOOKING -> ?
+  >> [t5 MAIN 1/6] PLAY Poké Pad
+ME PLAYS Poké Pad
+  >> [t5 TO_HAND 1/7] CARD my DECK[12] DECK[12]p0
+ME moves Drakloak: DECK -> HAND
+  >> [t5 MAIN 1/6] PLAY Night Stretcher
+ME PLAYS Night Stretcher
+  >> [t5 TO_HAND 1/1] CARD my DISCARD[3] Moltres
+ME moves Moltres: DISCARD -> HAND
+  >> [t5 MAIN 1/6] EVOLVE Drakloak onto Dreepy[70/70]
+ME EVOLVES Dreepy -> Drakloak
+  >> [t5 MAIN 1/5] ABILITY of Drakloak[90/90]
+ME moves Dusknoir: DECK -> LOOKING
+ME moves Night Stretcher: DECK -> LOOKING
+  >> [t5 TO_HAND 1/2] CARD my LOOKING[1] Night Stretcher
+ME moves Night Stretcher: LOOKING -> HAND
+ME moves Dusknoir: LOOKING -> ?
+  >> [t5 MAIN 1/4] EVOLVE Dragapult ex onto Drakloak[90/90]
+ME EVOLVES Drakloak -> Dragapult ex
+  >> [t5 MAIN 1/3] PLAY Moltres
+ME PLAYS Moltres
+  >> [t5 MAIN 1/2] END TURN
+----- turn end (ME)
+===== TURN START (OPP) =====
+OPP draws a card
+OPP attaches Enriching Energy -> Dunsparce
+OPP draws a card
+OPP draws a card
+OPP draws a card
+OPP draws a card
+OPP EVOLVES Abra -> Kadabra
+OPP draws a card
+OPP draws a card
+OPP PLAYS Buddy-Buddy Poffin
+OPP moves Dunsparce: DECK -> BENCH
+OPP *** ATTACK: Alakazam uses Powerful Hand(0) ***
+    ME Dragapult ex damage counters -220
+----- turn end (OPP)
+===== TURN START (ME) =====
+ME draws Boss’s Orders
+
+### turn 7 (first=0) board:
+  ME  prz=6 deck=35 | ACT Dragapult ex[100/320] | BENCH Dusclops[90/90] Drakloak[90/90] Duskull[60/60] Moltres[120/120]
+      hand: Boss’s Orders Drakloak Night Stretcher Team Rocket's Watchtower
+  OPP prz=5 deck=28 | ACT Alakazam[140/140 E:PS] | BENCH Kadabra[80/80 E:PS] Kadabra[80/80] Fezandipiti ex[210/210] Dunsparce[70/70 E:CO] Dunsparce[70/70]
+      hand: (11 cards)
+  >> [t7 MAIN 1/4] ABILITY of Drakloak[90/90]
+ME moves Ultra Ball: DECK -> LOOKING
+ME moves Lillie's Determination: DECK -> LOOKING
+  >> [t7 TO_HAND 1/2] CARD my LOOKING[1] Lillie's Determination
+ME moves Lillie's Determination: LOOKING -> HAND
+ME moves Ultra Ball: LOOKING -> ?
+  >> [t7 MAIN 1/4] PLAY Lillie's Determination
+ME PLAYS Lillie's Determination
+ME moves Team Rocket's Watchtower: HAND -> DECK
+ME moves Drakloak: HAND -> DECK
+ME moves Night Stretcher: HAND -> DECK
+ME moves Boss’s Orders: HAND -> DECK
+ME draws Lillie's Determination
+ME draws Dusclops
+ME draws Crispin
+ME draws Poké Pad
+ME draws Crispin
+ME draws Basic {P} Energy
+ME draws Budew
+ME draws Fezandipiti ex
+  >> [t7 MAIN 1/11] PLAY Poké Pad
+ME PLAYS Poké Pad
+  >> [t7 TO_HAND 1/5] CARD my DECK[25] DECK[25]p0
+ME moves Dusknoir: DECK -> HAND
+  >> [t7 MAIN 1/11] EVOLVE Dusclops onto Duskull[60/60]
+ME EVOLVES Duskull -> Dusclops
+  >> [t7 MAIN 1/11] EVOLVE Dusknoir onto Dusclops[90/90]
+ME EVOLVES Dusclops -> Dusknoir
+  >> [t7 MAIN 1/10] PLAY Budew
+ME PLAYS Budew
+  >> [t7 MAIN 1/9] ATTACH Basic {P} Energy -> Dragapult ex[100/320]
+ME attaches Basic {P} Energy -> Dragapult ex
+  >> [t7 MAIN 1/5] RETREAT
+  >> [t7 DISCARD_ENERGY 1/1] ENERGY(idx0) on Dragapult ex[100/320 E:PS]
+ME moves Basic {P} Energy: ENERGY -> DISCARD
+  >> [t7 SWITCH 1/5] CARD my BENCH[4] Budew[30/30]
+ME switches: Budew out, Dragapult ex in
+  >> [t7 MAIN 1/4] ATTACK Itchy Pollen(10)
+ME *** ATTACK: Budew uses Itchy Pollen(10) ***
+    OPP Alakazam HP -10
+----- turn end (ME)
+===== TURN START (OPP) =====
+OPP draws a card
+OPP PLAYS Boss’s Orders
+ME switches: Dragapult ex out, Budew in
+OPP *** ATTACK: Alakazam uses Powerful Hand(0) ***
+    ME Dragapult ex damage counters -220
+ME moves Dragapult ex: ACTIVE -> DISCARD
+ME moves Drakloak: PRE_EVOLUTION -> DISCARD
+ME moves Dreepy: PRE_EVOLUTION -> DISCARD
+OPP moves facedown card: PRIZE -> HAND
+OPP moves facedown card: PRIZE -> HAND
+
+### turn 8 (first=0) board:
+  ME  prz=6 deck=29 | ACT (facedown) | BENCH Dusknoir[160/160] Drakloak[90/90] Dusclops[90/90] Moltres[120/120] Budew[30/30]
+      hand: Crispin Crispin Fezandipiti ex Lillie's Determination
+  OPP prz=3 deck=27 | ACT Alakazam[130/140 E:PS] | BENCH Kadabra[80/80 E:PS] Kadabra[80/80] Fezandipiti ex[210/210] Dunsparce[70/70 E:CO] Dunsparce[70/70]
+      hand: (13 cards)
+  >> [t8 TO_ACTIVE 1/5] CARD my BENCH[4] Budew[30/30]
+ME moves Budew: BENCH -> ACTIVE
+----- turn end (OPP)
+===== TURN START (ME) =====
+ME draws Lillie's Determination
+
+### turn 9 (first=0) board:
+  ME  prz=6 deck=28 | ACT Budew[30/30] | BENCH Dusknoir[160/160] Drakloak[90/90] Dusclops[90/90] Moltres[120/120]
+      hand: Crispin Crispin Fezandipiti ex Lillie's Determination Lillie's Determination
+  OPP prz=3 deck=27 | ACT Alakazam[130/140 E:PS] | BENCH Kadabra[80/80 E:PS] Kadabra[80/80] Fezandipiti ex[210/210] Dunsparce[70/70 E:CO] Dunsparce[70/70]
+      hand: (13 cards)
+  >> [t9 MAIN 1/11] ABILITY of Drakloak[90/90]
+ME moves Crushing Hammer: DECK -> LOOKING
+ME moves Unfair Stamp: DECK -> LOOKING
+  >> [t9 TO_HAND 1/2] CARD my LOOKING[1] Unfair Stamp
+ME moves Unfair Stamp: LOOKING -> HAND
+ME moves Crushing Hammer: LOOKING -> ?
+  >> [t9 MAIN 1/11] ABILITY of Dusknoir[160/160]
+  >> [t9 DAMAGE_COUNTER 1/6] CARD opp BENCH[0] Kadabra[80/80 E:PS]
+    OPP Kadabra damage counters -130
+ME moves Dusknoir: BENCH -> DISCARD
+ME moves Dusclops: PRE_EVOLUTION -> DISCARD
+ME moves Duskull: PRE_EVOLUTION -> DISCARD
+OPP moves Kadabra: BENCH -> DISCARD
+OPP moves Abra: PRE_EVOLUTION -> DISCARD
+OPP moves Basic {P} Energy: ENERGY -> DISCARD
+OPP moves facedown card: PRIZE -> HAND
+  >> [t9 TO_HAND 1/6] CARD my PRIZE[0] prize[0](facedown)
+ME moves Basic {R} Energy: PRIZE -> HAND
+  >> [t9 MAIN 1/14] PLAY Fezandipiti ex
+ME PLAYS Fezandipiti ex
+  >> [t9 MAIN 1/15] ABILITY of Fezandipiti ex[210/210]
+ME draws Basic {D} Energy
+ME draws Poké Pad
+ME draws Dragapult ex
+  >> [t9 MAIN 1/21] EVOLVE Dragapult ex onto Drakloak[90/90]
+ME EVOLVES Drakloak -> Dragapult ex
+  >> [t9 MAIN 1/20] PLAY Poké Pad
+ME PLAYS Poké Pad
+  >> [t9 TO_HAND 1/4] CARD my DECK[6] DECK[6]p0
+ME moves Munkidori: DECK -> HAND
+  >> [t9 MAIN 1/20] PLAY Crispin
+ME PLAYS Crispin
+  >> [t9 TO_HAND 1/5] CARD my DECK[17] DECK[17]p0
+ME moves Basic {R} Energy: DECK -> HAND
+  >> [t9 ATTACH_TO 1/2] CARD my DECK[3] DECK[3]p0
+  >> [t9 ATTACH_FROM 1/5] CARD my BENCH[0] Dragapult ex[320/320]
+ME attaches Basic {P} Energy -> Dragapult ex
+  >> [t9 MAIN 1/21] ATTACH Basic {R} Energy -> Dragapult ex[320/320 E:PS]
+ME attaches Basic {R} Energy -> Dragapult ex
+  >> [t9 MAIN 1/6] PLAY Unfair Stamp
+ME PLAYS Unfair Stamp
+ME moves Lillie's Determination: HAND -> DECK
+ME moves Crispin: HAND -> DECK
+ME moves Lillie's Determination: HAND -> DECK
+ME moves Basic {D} Energy: HAND -> DECK
+ME moves Munkidori: HAND -> DECK
+ME moves Basic {R} Energy: HAND -> DECK
+OPP moves facedown card: HAND -> DECK
+OPP moves facedown card: HAND -> DECK
+OPP moves facedown card: HAND -> DECK
+OPP moves facedown card: HAND -> DECK
+OPP moves facedown card: HAND -> DECK
+OPP moves facedown card: HAND -> DECK
+OPP moves facedown card: HAND -> DECK
+OPP moves facedown card: HAND -> DECK
+OPP moves facedown card: HAND -> DECK
+OPP moves facedown card: HAND -> DECK
+OPP moves facedown card: HAND -> DECK
+OPP moves facedown card: HAND -> DECK
+OPP moves facedown card: HAND -> DECK
+OPP moves facedown card: HAND -> DECK
+ME draws Drakloak
+ME draws Buddy-Buddy Poffin
+ME draws Basic {R} Energy
+ME draws Crispin
+ME draws Lillie's Determination
+OPP draws a card
+OPP draws a card
+  >> [t9 MAIN 1/5] PLAY Buddy-Buddy Poffin
+ME PLAYS Buddy-Buddy Poffin
+  >> [t9 TO_BENCH 1/1] CARD my DECK[13] DECK[13]p0
+ME moves Dreepy: DECK -> BENCH
+  >> [t9 MAIN 1/4] RETREAT
+  >> [t9 SWITCH 1/5] CARD my BENCH[0] Dragapult ex[320/320 E:PSFI]
+ME switches: Dragapult ex out, Budew in
+  >> [t9 MAIN 1/4] ATTACK Phantom Dive(200)
+ME *** ATTACK: Dragapult ex uses Phantom Dive(200) ***
+    OPP Alakazam HP -200
+  >> [t9 DAMAGE_COUNTER_ANY 1/4] CARD opp BENCH[0] Kadabra[80/80]
+    OPP Kadabra damage counters -10
+  >> [t9 DAMAGE_COUNTER_ANY 1/4] CARD opp BENCH[0] Kadabra[70/80]
+  >> [t9 DAMAGE_COUNTER_ANY 1/4] CARD opp BENCH[0] Kadabra[60/80]
+  >> [t9 DAMAGE_COUNTER_ANY 1/4] CARD opp BENCH[0] Kadabra[50/80]
+  >> [t9 DAMAGE_COUNTER_ANY 1/4] CARD opp BENCH[0] Kadabra[40/80]
+  >> [t9 DAMAGE_COUNTER_ANY 1/4] CARD opp BENCH[0] Kadabra[30/80]
+OPP moves Alakazam: ACTIVE -> DISCARD
+OPP moves Abra: PRE_EVOLUTION -> DISCARD
+OPP moves Basic {P} Energy: ENERGY -> DISCARD
+  >> [t9 TO_HAND 1/5] CARD my PRIZE[0] prize[0](facedown)
+ME moves Crispin: PRIZE -> HAND
+OPP moves Kadabra: BENCH -> ACTIVE
+----- turn end (ME)
+===== TURN START (OPP) =====
+OPP draws a card
+OPP draws a card
+OPP draws a card
+OPP draws a card
+OPP EVOLVES Kadabra -> Alakazam
+OPP draws a card
+OPP draws a card
+OPP draws a card
+OPP PLAYS Poké Pad
+OPP moves Abra: DECK -> HAND
+OPP PLAYS Abra
+OPP PLAYS Hilda
+OPP moves Kadabra: DECK -> HAND
+OPP moves Telepath Psychic Energy: DECK -> HAND
+OPP attaches Telepath Psychic Energy -> Alakazam
+OPP *** ATTACK: Alakazam uses Powerful Hand(0) ***
+    ME Dragapult ex damage counters -140
+----- turn end (OPP)
+===== TURN START (ME) =====
+ME draws Basic {R} Energy
+
+### turn 11 (first=0) board:
+  ME  prz=4 deck=20 | ACT Dragapult ex[180/320 E:PSFI] | BENCH Budew[30/30] Dusclops[90/90] Moltres[120/120] Fezandipiti ex[210/210] Dreepy[70/70]
+      hand: Basic {R} Energy Basic {R} Energy Crispin Crispin Drakloak Lillie's Determination
+  OPP prz=2 deck=29 | ACT Alakazam[80/140 E:PS] | BENCH Fezandipiti ex[210/210] Dunsparce[70/70 E:CO] Dunsparce[70/70] Abra[50/50]
+      hand: (7 cards)
+  >> [t11 MAIN 1/21] EVOLVE Drakloak onto Dreepy[70/70]
+ME EVOLVES Dreepy -> Drakloak
+  >> [t11 MAIN 1/21] ABILITY of Dusclops[90/90]
+  >> [t11 DAMAGE_COUNTER 1/5] CARD opp BENCH[3] Abra[50/50]
+    OPP Abra damage counters -50
+ME moves Dusclops: BENCH -> DISCARD
+ME moves Duskull: PRE_EVOLUTION -> DISCARD
+OPP moves Abra: BENCH -> DISCARD
+OPP moves facedown card: PRIZE -> HAND
+  >> [t11 TO_HAND 1/4] CARD my PRIZE[0] prize[0](facedown)
+ME moves Ultra Ball: PRIZE -> HAND
+  >> [t11 MAIN 1/19] ATTACK Phantom Dive(200)
+ME *** ATTACK: Dragapult ex uses Phantom Dive(200) ***
+    OPP Alakazam HP -200
+  >> [t11 DAMAGE_COUNTER_ANY 1/3] CARD opp BENCH[1] Dunsparce[70/70 E:CO]
+    OPP Dunsparce damage counters -10
+  >> [t11 DAMAGE_COUNTER_ANY 1/3] CARD opp BENCH[1] Dunsparce[60/70 E:CO]
+  >> [t11 DAMAGE_COUNTER_ANY 1/3] CARD opp BENCH[1] Dunsparce[50/70 E:CO]
+  >> [t11 DAMAGE_COUNTER_ANY 1/3] CARD opp BENCH[1] Dunsparce[40/70 E:CO]
+  >> [t11 DAMAGE_COUNTER_ANY 1/3] CARD opp BENCH[1] Dunsparce[30/70 E:CO]
+  >> [t11 DAMAGE_COUNTER_ANY 1/3] CARD opp BENCH[2] Dunsparce[70/70]
+    OPP Dunsparce damage counters -10
+OPP moves Alakazam: ACTIVE -> DISCARD
+OPP moves Kadabra: PRE_EVOLUTION -> DISCARD
+OPP moves Abra: PRE_EVOLUTION -> DISCARD
+OPP moves Telepath Psychic Energy: ENERGY -> DISCARD
+  >> [t11 TO_HAND 1/3] CARD my PRIZE[0] prize[0](facedown)
+ME moves Crushing Hammer: PRIZE -> HAND
+OPP moves Dunsparce: BENCH -> ACTIVE
+----- turn end (ME)
+===== TURN START (OPP) =====
+OPP draws a card
+OPP draws a card
+OPP draws a card
+OPP draws a card
+OPP PLAYS Poké Pad
+OPP moves Dudunsparce: DECK -> HAND
+OPP EVOLVES Dunsparce -> Dudunsparce
+OPP EVOLVES Dunsparce -> Dudunsparce
+OPP PLAYS Buddy-Buddy Poffin
+OPP moves Dunsparce: DECK -> BENCH
+OPP PLAYS Xerosic’s Machinations
+
+### turn 12 (first=0) board:
+  ME  prz=2 deck=20 | ACT Dragapult ex[180/320 E:PSFI] | BENCH Budew[30/30] Moltres[120/120] Fezandipiti ex[210/210] Drakloak[90/90]
+      hand: Basic {R} Energy Basic {R} Energy Crispin Crispin Crushing Hammer Lillie's Determination Ultra Ball
+  OPP prz=1 deck=23 | ACT Dudunsparce[90/140 E:CO] | BENCH Fezandipiti ex[210/210] Dudunsparce[130/140] Dunsparce[70/70]
+      hand: (8 cards)
+  >> [t12 DISCARD 4/7] CARD my HAND[2] Lillie's Determination | CARD my HAND[3] Crispin | CARD my HAND[5] Ultra Ball | CARD my HAND[6] Crushing Hammer
+ME moves Lillie's Determination: HAND -> DISCARD
+ME moves Crispin: HAND -> DISCARD
+ME moves Ultra Ball: HAND -> DISCARD
+ME moves Crushing Hammer: HAND -> DISCARD
+----- turn end (OPP)
+===== TURN START (ME) =====
+ME draws Boss’s Orders
+
+### turn 13 (first=0) board:
+  ME  prz=2 deck=19 | ACT Dragapult ex[180/320 E:PSFI] | BENCH Budew[30/30] Moltres[120/120] Fezandipiti ex[210/210] Drakloak[90/90]
+      hand: Basic {R} Energy Basic {R} Energy Boss’s Orders Crispin
+  OPP prz=1 deck=23 | ACT Dudunsparce[90/140 E:CO] | BENCH Fezandipiti ex[210/210] Dudunsparce[130/140] Dunsparce[70/70]
+      hand: (8 cards)
+  >> [t13 MAIN 1/17] ATTACK Phantom Dive(200)
+ME *** ATTACK: Dragapult ex uses Phantom Dive(200) ***
+    OPP Dudunsparce HP -200
+  >> [t13 DAMAGE_COUNTER_ANY 1/3] CARD opp BENCH[1] Dudunsparce[130/140]
+    OPP Dudunsparce damage counters -10
+  >> [t13 DAMAGE_COUNTER_ANY 1/3] CARD opp BENCH[1] Dudunsparce[120/140]
+  >> [t13 DAMAGE_COUNTER_ANY 1/3] CARD opp BENCH[1] Dudunsparce[110/140]
+  >> [t13 DAMAGE_COUNTER_ANY 1/3] CARD opp BENCH[1] Dudunsparce[100/140]
+  >> [t13 DAMAGE_COUNTER_ANY 1/3] CARD opp BENCH[1] Dudunsparce[90/140]
+  >> [t13 DAMAGE_COUNTER_ANY 1/3] CARD opp BENCH[1] Dudunsparce[80/140]
+OPP moves Dudunsparce: ACTIVE -> DISCARD
+OPP moves Dunsparce: PRE_EVOLUTION -> DISCARD
+OPP moves Enriching Energy: ENERGY -> DISCARD
+  >> [t13 TO_HAND 1/2] CARD my PRIZE[0] prize[0](facedown)
+ME moves Dreepy: PRIZE -> HAND
+OPP moves Dudunsparce: BENCH -> ACTIVE
+----- turn end (ME)
+===== TURN START (OPP) =====
+OPP draws a card
+OPP draws a card
+OPP draws a card
+OPP draws a card
+OPP PLAYS Nighttime Mine
+ME moves Team Rocket's Watchtower: STADIUM -> DISCARD
+OPP draws a card
+OPP draws a card
+OPP draws a card
+OPP moves Dudunsparce: ACTIVE -> DECK
+OPP moves Dunsparce: PRE_EVOLUTION -> DECK
+OPP moves Dunsparce: BENCH -> ACTIVE
+OPP PLAYS Poké Pad
+OPP moves Dudunsparce: DECK -> HAND
+OPP EVOLVES Dunsparce -> Dudunsparce
+OPP PLAYS Boss’s Orders
+ME switches: Fezandipiti ex out, Dragapult ex in
+OPP PLAYS Buddy-Buddy Poffin
+OPP moves Dunsparce: DECK -> BENCH
+OPP draws a card
+OPP draws a card
+OPP draws a card
+OPP moves Dudunsparce: ACTIVE -> DECK
+OPP moves Dunsparce: PRE_EVOLUTION -> DECK
+OPP moves Dunsparce: BENCH -> ACTIVE
+OPP PLAYS Buddy-Buddy Poffin
+OPP moves Dunsparce: DECK -> BENCH
+----- turn end (OPP)
+===== TURN START (ME) =====
+ME draws Meowth ex
+
+### turn 15 (first=0) board:
+  ME  prz=1 deck=18 | ACT Fezandipiti ex[210/210] | BENCH Budew[30/30] Moltres[120/120] Dragapult ex[180/320 E:PSFI] Drakloak[90/90]
+      hand: Basic {R} Energy Basic {R} Energy Boss’s Orders Crispin Dreepy Meowth ex
+  OPP prz=1 deck=14 | ACT Dunsparce[70/70] | BENCH Fezandipiti ex[210/210] Dunsparce[70/70]
+      hand: (13 cards)
+  >> [t15 MAIN 1/16] ATTACH Basic {R} Energy -> Fezandipiti ex[210/210]
+ME attaches Basic {R} Energy -> Fezandipiti ex
+  >> [t15 MAIN 1/7] RETREAT
+  >> [t15 DISCARD_ENERGY 1/1] ENERGY(idx0) on Fezandipiti ex[210/210 E:FI]
+ME moves Basic {R} Energy: ENERGY -> DISCARD
+  >> [t15 SWITCH 1/4] CARD my BENCH[2] Dragapult ex[180/320 E:PSFI]
+ME switches: Dragapult ex out, Fezandipiti ex in
+  >> [t15 MAIN 1/7] ATTACK Jet Headbutt(70)
+ME *** ATTACK: Dragapult ex uses Jet Headbutt(70) ***
+    OPP Dunsparce HP -70
+OPP moves Dunsparce: ACTIVE -> DISCARD
+  >> [t15 TO_HAND 1/1] CARD my PRIZE[0] prize[0](facedown)
+
+# rewards=[1, -1] (ME=player0)

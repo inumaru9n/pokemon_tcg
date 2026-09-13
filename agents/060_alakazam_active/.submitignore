@@ -1,0 +1,7 @@
+model_060.txt
+model_discard_060.txt
+collect_060.py
+collect_discard_060.py
+train_060.py
+train_discard_060.py
+export_model_060.py

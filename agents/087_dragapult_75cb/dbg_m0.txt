@@ -1,0 +1,126 @@
+
+### turn 0
+  ME  prz=0 deck=60 | ACT (facedown) | BENCH - | hand: (0)
+  OPP prz=0 deck=60 | ACT (facedown) | BENCH - | hand: (0)
+  [IS_FIRST 1/2] YES
+  [SETUP_ACTIVE_POKEMON 1/2] CARD my HAND Dreepy
+  [DRAW_COUNT 1/2] count=1
+  [SETUP_BENCH_POKEMON 0/1] 
+
+### turn 1
+  ME  prz=6 deck=45 | ACT Dreepy[70/70] | BENCH - | hand: Boss’s Orders Buddy-Buddy Poffin Budew Crispin Crushing Hammer Dragapult ex Drakloak Dusclops
+  OPP prz=6 deck=47 | ACT Dreepy[70/70] | BENCH - | hand: (6)
+  [MAIN 1/3] PLAY Budew
+  [MAIN 1/2] PLAY Buddy-Buddy Poffin
+  [TO_BENCH 2/4] CARD DECK[37]p0 | CARD DECK[43]p0
+  [MAIN 1/1] END
+
+### turn 3
+  ME  prz=6 deck=42 | ACT Dreepy[60/70] | BENCH Budew[30/30] Dreepy[70/70] Dreepy[70/70] | hand: Boss’s Orders Buddy-Buddy Poffin Crispin Crushing Hammer Dragapult ex Drakloak Dusclops
+  OPP prz=6 deck=40 | ACT Budew[30/30] | BENCH Latias ex[210/210] Dreepy[70/70 E:2] Dreepy[70/70] Dreepy[70/70] Dreepy[70/70] | hand: (4)
+  [MAIN 1/6] PLAY Crispin
+  [TO_HAND 1/7] CARD DECK[37]p0
+  [ATTACH_TO 1/6] CARD DECK[4]p0
+  [ATTACH_FROM 1/4] CARD my BENCH Dreepy[70/70]
+  [MAIN 1/8] EVOLVE hand[4] onto BENCH[1]
+  [MAIN 1/6] ABILITY BENCH[1]
+  [TO_HAND 1/2] CARD LOOKING[0]p0
+  [MAIN 1/5] END
+
+### turn 5
+  ME  prz=6 deck=38 | ACT Dreepy[50/70] | BENCH Budew[30/30] Drakloak[90/90] Dreepy[70/70] | hand: Basic {D} Energy Boss’s Orders Boss’s Orders Buddy-Buddy Poffin Crushing Hammer Dragapult ex Dusclops Poké Pad
+  OPP prz=6 deck=39 | ACT Budew[30/30] | BENCH Latias ex[210/210] Dreepy[70/70 E:2] Dreepy[70/70] Dreepy[70/70] Dreepy[70/70] | hand: (3)
+  [MAIN 1/9] EVOLVE hand[0] onto BENCH[1]
+  [MAIN 1/7] END
+
+### turn 7
+  ME  prz=6 deck=37 | ACT Dreepy[40/70] | BENCH Budew[30/30] Dragapult ex[320/320] Dreepy[70/70] | hand: Basic {D} Energy Basic {R} Energy Boss’s Orders Boss’s Orders Buddy-Buddy Poffin Crushing Hammer Dusclops Poké Pad
+  OPP prz=6 deck=38 | ACT Budew[30/30] | BENCH Latias ex[210/210] Dreepy[70/70 E:2] Dreepy[70/70] Dreepy[70/70] Dreepy[70/70] | hand: (4)
+  [MAIN 1/11] ATTACH hand[7] -> BENCH[1]
+  [MAIN 1/3] END
+
+### turn 9
+  ME  prz=6 deck=36 | ACT Dreepy[30/70] | BENCH Budew[30/30] Dragapult ex[320/320] Dreepy[70/70] | hand: Basic {D} Energy Boss’s Orders Boss’s Orders Buddy-Buddy Poffin Crushing Hammer Dusclops Moltres Poké Pad
+  OPP prz=6 deck=37 | ACT Budew[30/30] | BENCH Latias ex[210/210] Dreepy[70/70 E:2] Dreepy[70/70 E:5] Dreepy[70/70] Dreepy[70/70] | hand: (3)
+  [MAIN 1/8] PLAY Moltres
+  [MAIN 1/8] END
+
+### turn 11
+  ME  prz=6 deck=35 | ACT Dreepy[20/70] | BENCH Budew[30/30] Dragapult ex[320/320] Dreepy[70/70] Moltres[120/120] | hand: Basic {D} Energy Boss’s Orders Boss’s Orders Buddy-Buddy Poffin Crispin Crushing Hammer Dusclops Poké Pad
+  OPP prz=6 deck=36 | ACT Budew[30/30] | BENCH Latias ex[210/210] Dreepy[70/70 E:2] Dreepy[70/70 E:5] Dreepy[70/70] Dreepy[70/70] | hand: (4)
+  [MAIN 1/9] PLAY Crispin
+  [TO_HAND 1/4] CARD DECK[14]p0
+  [ATTACH_TO 1/2] CARD DECK[26]p0
+  [ATTACH_FROM 1/5] CARD my BENCH Dragapult ex[320/320]
+  [MAIN 1/11] ATTACH hand[7] -> BENCH[1]
+  [MAIN 1/1] END
+
+### turn 13
+  ME  prz=6 deck=32 | ACT Dreepy[10/70] | BENCH Budew[30/30] Dragapult ex[320/320 E:25] Dreepy[70/70] Moltres[120/120] | hand: Basic {D} Energy Boss’s Orders Boss’s Orders Buddy-Buddy Poffin Buddy-Buddy Poffin Crushing Hammer Dusclops Poké Pad
+  OPP prz=6 deck=35 | ACT Budew[30/30] | BENCH Latias ex[210/210] Dragapult ex[320/320 E:2] Dreepy[70/70 E:5] Dreepy[70/70] Dreepy[70/70] | hand: (3)
+  [MAIN 1/8] END
+
+### turn 14
+  ME  prz=6 deck=32 | ACT (facedown) | BENCH Budew[30/30] Dragapult ex[320/320 E:25] Dreepy[70/70] Moltres[120/120] | hand: Basic {D} Energy Boss’s Orders Boss’s Orders Buddy-Buddy Poffin Buddy-Buddy Poffin Crushing Hammer Dusclops Poké Pad
+  OPP prz=5 deck=34 | ACT Budew[30/30] | BENCH Latias ex[210/210] Dragapult ex[320/320 E:2] Dreepy[70/70 E:5] Dreepy[70/70] Dreepy[70/70] | hand: (5)
+  [TO_ACTIVE 1/4] CARD my BENCH Budew[30/30]
+
+### turn 15
+  ME  prz=6 deck=31 | ACT Budew[30/30] | BENCH Dragapult ex[320/320 E:25] Dreepy[70/70] Moltres[120/120] | hand: Basic {D} Energy Boss’s Orders Boss’s Orders Buddy-Buddy Poffin Buddy-Buddy Poffin Crushing Hammer Dragapult ex Dusclops Poké Pad
+  OPP prz=5 deck=34 | ACT Budew[30/30] | BENCH Latias ex[210/210] Dragapult ex[320/320 E:2] Dreepy[70/70 E:5] Dreepy[70/70] Dreepy[70/70] | hand: (5)
+  [MAIN 1/9] PLAY Boss’s Orders
+  [SWITCH 1/5] CARD opp BENCH Dreepy[70/70 E:5]
+  [MAIN 1/7] RETREAT
+  [SWITCH 1/3] CARD my BENCH Dragapult ex[320/320 E:25]
+  [MAIN 1/7] ATTACK Phantom Dive
+  [DAMAGE_COUNTER_ANY 1/5] CARD opp BENCH Budew[30/30]
+  [DAMAGE_COUNTER_ANY 1/5] CARD opp BENCH Budew[20/30]
+  [DAMAGE_COUNTER_ANY 1/5] CARD opp BENCH Budew[10/30]
+  [DAMAGE_COUNTER_ANY 1/5] CARD opp BENCH Dreepy[70/70]
+  [DAMAGE_COUNTER_ANY 1/5] CARD opp BENCH Dreepy[60/70]
+  [DAMAGE_COUNTER_ANY 1/5] CARD opp BENCH Dreepy[50/70]
+  [TO_HAND 1/6] CARD PRIZE[0]p0
+  [TO_HAND 1/5] CARD PRIZE[0]p0
+
+### turn 17
+  ME  prz=4 deck=38 | ACT Dragapult ex[120/320 E:25] | BENCH Budew[10/30] Dreepy[30/70] Moltres[120/120] | hand: Buddy-Buddy Poffin Poké Pad Ultra Ball
+  OPP prz=5 deck=24 | ACT Dragapult ex[320/320 E:25] | BENCH Latias ex[210/210] Drakloak[60/90] Dreepy[70/70 E:2] Fezandipiti ex[210/210] | hand: (5)
+  [MAIN 1/7] PLAY Buddy-Buddy Poffin
+  [TO_BENCH 1/2] CARD DECK[0]p0
+  [MAIN 1/5] PLAY Poké Pad
+  [TO_HAND 1/7] CARD DECK[7]p0
+  [MAIN 1/5] EVOLVE hand[1] onto BENCH[1]
+  [MAIN 1/5] ABILITY BENCH[1]
+  [TO_HAND 1/2] CARD LOOKING[1]p0
+  [MAIN 1/9] ATTACH hand[1] -> BENCH[1]
+  [MAIN 1/4] ATTACK Phantom Dive
+  [DAMAGE_COUNTER_ANY 1/4] CARD opp BENCH Drakloak[60/90]
+  [DAMAGE_COUNTER_ANY 1/4] CARD opp BENCH Drakloak[50/90]
+  [DAMAGE_COUNTER_ANY 1/4] CARD opp BENCH Drakloak[40/90]
+  [DAMAGE_COUNTER_ANY 1/4] CARD opp BENCH Drakloak[30/90]
+  [DAMAGE_COUNTER_ANY 1/4] CARD opp BENCH Drakloak[20/90]
+  [DAMAGE_COUNTER_ANY 1/4] CARD opp BENCH Drakloak[10/90]
+  [TO_HAND 1/4] CARD PRIZE[0]p0
+
+### turn 18
+  ME  prz=3 deck=35 | ACT (facedown) | BENCH Moltres[120/120] Duskull[60/60] | hand: Boss’s Orders Ultra Ball
+  OPP prz=1 deck=17 | ACT Dragapult ex[120/320 E:25] | BENCH Latias ex[210/210] Drakloak[90/90 E:25] Fezandipiti ex[210/210] | hand: (10)
+  [TO_ACTIVE 1/2] CARD my BENCH Duskull[60/60]
+
+### turn 19
+  ME  prz=3 deck=34 | ACT Duskull[60/60] | BENCH Moltres[120/120] | hand: Boss’s Orders Night Stretcher Ultra Ball
+  OPP prz=1 deck=17 | ACT Dragapult ex[120/320 E:25] | BENCH Latias ex[210/210] Drakloak[90/90 E:25] Fezandipiti ex[210/210] | hand: (10)
+  [MAIN 1/4] PLAY Ultra Ball
+  [DISCARD 2/2] CARD my HAND Night Stretcher | CARD my HAND Boss’s Orders
+  [TO_HAND 1/10] CARD DECK[15]p0
+  [MAIN 1/2] PLAY Fezandipiti ex
+  [MAIN 1/2] ABILITY BENCH[1]
+  [MAIN 1/4] PLAY Meowth ex
+  [ACTIVATE 1/2] YES
+  [TO_HAND 1/7] CARD DECK[2]p0
+  [MAIN 1/4] PLAY Ultra Ball
+  [DISCARD 2/2] CARD my HAND Dusclops | CARD my HAND Lillie's Determination
+  [TO_HAND 1/7] CARD DECK[9]p0
+  [MAIN 1/2] EVOLVE hand[0] onto ACTIVE[0]
+  [MAIN 1/2] END
+##### RESULT: OPP WINS

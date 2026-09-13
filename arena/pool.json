@@ -1,10 +1,52 @@
 {
-  "note": "合否判定用の標準相手プール。weightは本番ladderメタで対応するアーキタイプのシェア%（knowledge/episodes/の最新レポート基準、判定時に正規化）。エージェントが増えたら/メタが動いたら更新する。2026-07-04にAlakazam追加（プール構成変更をまたぐweighted値の比較は不可）。",
-  "meta_date": "2026-07-03",
-  "opponents": [
-    {"dir": "agents/007_lucario_lethal", "weight": 5.0, "archetype": "Mega Lucario ex"},
-    {"dir": "agents/002_marnie_grimmsnarl", "weight": 21.7, "archetype": "Marnie's Grimmsnarl ex"},
-    {"dir": "agents/010_alakazam", "weight": 25.7, "archetype": "Alakazam"},
-    {"dir": "agents/000_random", "weight": 5.8, "archetype": "random（本番マッチングの10%ランダム対戦を反映。5.8/(52.4+5.8)≈10%）"}
-  ]
+ "note": "v8(EXP-122): 084 Alakazam を **174_alakazam_clean** に、161 Marnie を **176_marnie_clean** に差し替え。084は本番リプレイ実測で +31.2pt 弱く、161は棄却済みの軸A47特徴とclip10が入っていた。**v7の加重値とは比較できない**。また174系の候補を測るとAlakazam枠がほぼミラーになる（血縁バイアス。候補どうしの相対比較には影響しないが絶対値は甘くなる）",
+ "meta_date": "2026-08-04〜08-07",
+ "version": "v8",
+ "opponents": [
+  {
+   "dir": "agents/176_marnie_clean",
+   "weight": 31.9,
+   "archetype": "Marnie's Grimmsnarl ex（1ec0f47981/Luca のSLレプリカ（EXP-096）。**忠実度ゲート合格 +1.1pt**。082（乖離+19.3pt）から交代）"
+  },
+  {
+   "dir": "agents/174_alakazam_clean",
+   "weight": 17.2,
+   "archetype": "Alakazam（156952a871=Majkel型レプリカ（EXP-084）。vs038で真値-0.5pt。**血縁バイアス注意**（Alakazam系候補はミラー寄りで甘く出る））"
+  },
+  {
+   "dir": "agents/130_lopunny_majkel",
+   "weight": 14.3,
+   "archetype": "Mega Lopunny ex（Majkel1337 / 5c1c56479b のSLレプリカ、657試合。**現行メタ最強デッキ 加重60.9%**。**忠実度は不合格**: 117との対戦が84.8%（真値52.7%、乖離+32.1pt）。ただし086（+38.6pt / 対Marnie−11.3pt）より両方の照合で優るため差し替えた。**この枠の値は依然として甘い＝プール全体の絶対値は約4pt過大**）"
+  },
+  {
+   "dir": "agents/085_kangaskhan_e57e",
+   "weight": 10.7,
+   "archetype": "Mega Kangaskhan ex（e57e レプリカ（EXP-085）。本番個体値との乖離-15.3pt（軽量逆設計の限界。100=SL版は不採用））"
+  },
+  {
+   "dir": "agents/000_random",
+   "weight": 10.4,
+   "archetype": "random（本番10%ランダム対戦 + カバー外テール。カバー率89.6%。直近はMega Lucario 4.2%/Thwackey 1.7%等が枠なし）"
+  },
+  {
+   "dir": "agents/021_dragapult_sample",
+   "weight": 6.3,
+   "archetype": "Dragapult ex（公式サンプル方策（未較正）。087レプリカはゲート不合格でrejected）"
+  },
+  {
+   "dir": "agents/131_ogerpon_majkel",
+   "weight": 6.0,
+   "archetype": "Teal Mask Ogerpon ex（Majkel1337 / 69a3d48d59 のSLレプリカ、607試合。**忠実度ゲート合格**: 117との対戦75.7%（真値73.1%、+2.6pt）/ 101との対戦86.3%（真値85.1%、+1.2pt）。対Marnie 85.1%という既存のどの枠とも違う対面プロファイルを持つ新顔）"
+  },
+  {
+   "dir": "agents/041_garchomp_replica",
+   "weight": 2.2,
+   "archetype": "Cynthia's Garchomp ex（fc15 レプリカ（EXP-041）。乖離-5.9pt）"
+  },
+  {
+   "dir": "agents/098_spidops_gen",
+   "weight": 1.0,
+   "archetype": "Team Rocket's Spidops（d5834c603a のSLレプリカ（EXP-096）。**忠実度ゲート合格 +0.5pt**。083（乖離+30.3pt）から交代。Articuno VeilがPowerful Handを無効化する構造カウンター）"
+  }
+ ]
 }

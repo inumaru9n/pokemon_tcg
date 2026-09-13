@@ -1,0 +1,46 @@
+{
+ "note": "合否判定用の標準相手プール v5（2026-08-03確定、07-23〜29メタ基準）。**v4とのweighted値比較は不可**（Marnie 38.4→53.9、Lopunny 4.5→1.1 の分布変化 + 2枠のレプリカ交代）。v4からの変更: (1) 082 Marnie → **101**（忠実度ゲート合格 +1.1pt。082は乖離+19.3ptで最大の負債だった） (2) 083 Spidops → **098**（ゲート合格 +0.5pt。083は乖離+30.3pt） (3) 重みを直近1週間（62,610デッキ）のシェアに更新。既知の課題: (a) 085 Kangaskhan は乖離-15.3ptのまま（SL版100は不採用） (b) 021 Dragapult は未較正 (c) 血縁バイアス: Alakazam枠084に対しAlakazam系候補はミラー寄りで甘く出る（weight16.3%）(d) Thwackey 1.7% はカバー外＝主力確定前にスポットチェックを推奨",
+ "meta_date": "2026-07-23〜29",
+ "opponents": [
+  {
+   "dir": "agents/101_marnie_luca",
+   "weight": 53.9,
+   "archetype": "Marnie's Grimmsnarl ex（1ec0f47981/Luca のSLレプリカ（EXP-096）。**忠実度ゲート合格 +1.1pt**。082（乖離+19.3pt）から交代）"
+  },
+  {
+   "dir": "agents/084_alakazam_majkel",
+   "weight": 16.3,
+   "archetype": "Alakazam（156952a871=Majkel型レプリカ（EXP-084）。vs038で真値-0.5pt。**血縁バイアス注意**（Alakazam系候補はミラー寄りで甘く出る））"
+  },
+  {
+   "dir": "agents/098_spidops_gen",
+   "weight": 9.6,
+   "archetype": "Team Rocket's Spidops（d5834c603a のSLレプリカ（EXP-096）。**忠実度ゲート合格 +0.5pt**。083（乖離+30.3pt）から交代。Articuno VeilがPowerful Handを無効化する構造カウンター）"
+  },
+  {
+   "dir": "agents/085_kangaskhan_e57e",
+   "weight": 8.7,
+   "archetype": "Mega Kangaskhan ex（e57e レプリカ（EXP-085）。本番個体値との乖離-15.3pt（軽量逆設計の限界。100=SL版は不採用））"
+  },
+  {
+   "dir": "agents/041_garchomp_replica",
+   "weight": 5.0,
+   "archetype": "Cynthia's Garchomp ex（fc15 レプリカ（EXP-041）。乖離-5.9pt）"
+  },
+  {
+   "dir": "agents/021_dragapult_sample",
+   "weight": 2.5,
+   "archetype": "Dragapult ex（公式サンプル方策（未較正）。087レプリカはゲート不合格でrejected）"
+  },
+  {
+   "dir": "agents/086_lopunny_53db",
+   "weight": 1.1,
+   "archetype": "Mega Lopunny ex（53db レプリカ（EXP-086）。シェアが4.5%→1.1%に低下したため重みを縮小）"
+  },
+  {
+   "dir": "agents/000_random",
+   "weight": 2.9,
+   "archetype": "random（本番10%ランダム対戦 + カバー外テール。カバー率97.1%）"
+  }
+ ]
+}

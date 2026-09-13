@@ -1,0 +1,103 @@
+
+### turn 0
+  ME  prz=0 deck=60 | ACT (facedown) | BENCH - | hand: (0)
+  OPP prz=0 deck=60 | ACT (facedown) | BENCH - | hand: (0)
+  [IS_FIRST 1/2] YES
+  [SETUP_ACTIVE_POKEMON 1/2] CARD my HAND Dreepy
+  [SETUP_BENCH_POKEMON 0/1] 
+
+### turn 1
+  ME  prz=6 deck=46 | ACT Dreepy[70/70] | BENCH - | hand: Basic {R} Energy Crispin Crispin Dragapult ex Drakloak Munkidori Ultra Ball
+  OPP prz=6 deck=46 | ACT Budew[30/30] | BENCH - | hand: (7)
+  [MAIN 1/4] PLAY Munkidori
+  [MAIN 1/4] ATTACH hand[3] -> ACTIVE[0]
+  [MAIN 1/3] END
+
+### turn 3
+  ME  prz=6 deck=45 | ACT Dreepy[60/70 E:2] | BENCH Munkidori[110/110] | hand: Boss’s Orders Crispin Crispin Dragapult ex Drakloak Ultra Ball
+  OPP prz=6 deck=41 | ACT Budew[30/30] | BENCH Dreepy[70/70 E:2] Dreepy[70/70] | hand: (6)
+  [MAIN 1/6] PLAY Crispin
+  [TO_HAND 1/6] CARD DECK[2]p0
+  [ATTACH_TO 1/3] CARD DECK[11]p0
+  [ATTACH_FROM 1/2] CARD my ACT Dreepy[60/70 E:2]
+  [MAIN 1/7] EVOLVE hand[2] onto ACTIVE[0]
+  [MAIN 1/6] ABILITY ACTIVE[0]
+  [TO_HAND 1/2] CARD LOOKING[1]p0
+  [MAIN 1/5] ATTACK Dragon Headbutt
+  [TO_HAND 1/6] CARD PRIZE[0]p0
+
+### turn 5
+  ME  prz=5 deck=41 | ACT Drakloak[10/90 E:25] | BENCH Munkidori[110/110] | hand: Basic {P} Energy Basic {R} Energy Boss’s Orders Crispin Dragapult ex Drakloak Lillie's Determination Ultra Ball
+  OPP prz=6 deck=31 | ACT Dragapult ex[320/320 E:2] | BENCH Drakloak[90/90] Meowth ex[170/170] Budew[30/30] Dreepy[70/70] Dreepy[70/70] | hand: (5)
+  [MAIN 1/13] EVOLVE hand[2] onto ACTIVE[0]
+  [MAIN 1/12] PLAY Ultra Ball
+  [DISCARD 2/6] CARD my HAND Basic {R} Energy | CARD my HAND Basic {P} Energy
+  [TO_HAND 1/14] CARD DECK[13]p0
+  [MAIN 1/8] PLAY Dreepy
+  [MAIN 1/7] PLAY Boss’s Orders
+  [SWITCH 1/5] CARD opp BENCH Meowth ex[170/170]
+  [MAIN 1/4] ATTACK Phantom Dive
+  [DAMAGE_COUNTER_ANY 1/5] CARD opp BENCH Budew[30/30]
+  [DAMAGE_COUNTER_ANY 1/5] CARD opp BENCH Budew[20/30]
+  [DAMAGE_COUNTER_ANY 1/5] CARD opp BENCH Budew[10/30]
+  [DAMAGE_COUNTER_ANY 1/5] CARD opp BENCH Dreepy[70/70]
+  [DAMAGE_COUNTER_ANY 1/5] CARD opp BENCH Dreepy[60/70]
+  [DAMAGE_COUNTER_ANY 1/5] CARD opp BENCH Dreepy[50/70]
+  [TO_HAND 2/5] CARD PRIZE[0]p0 | CARD PRIZE[1]p0
+  [TO_HAND 1/3] CARD PRIZE[0]p0
+
+### turn 7
+  ME  prz=2 deck=39 | ACT Dragapult ex[40/320 E:25] | BENCH Munkidori[110/110] Dreepy[10/70] | hand: Crispin Dawn Drakloak Dusclops Duskull Fezandipiti ex Lillie's Determination
+  OPP prz=6 deck=22 | ACT Dragapult ex[320/320 E:25] | BENCH Drakloak[90/90] Drakloak[60/90] Drakloak[90/90] Fezandipiti ex[210/210] | hand: (3)
+  [MAIN 1/10] PLAY Fezandipiti ex
+  [MAIN 1/9] PLAY Duskull
+  [MAIN 1/8] EVOLVE hand[1] onto BENCH[1]
+  [MAIN 1/8] ABILITY BENCH[1]
+  [TO_HAND 1/2] CARD LOOKING[1]p0
+  [MAIN 1/8] PLAY Buddy-Buddy Poffin
+  [TO_BENCH 1/4] CARD DECK[11]p0
+  [MAIN 1/7] PLAY Lillie's Determination
+  [MAIN 1/17] PLAY Crushing Hammer
+  [DISCARD_ENERGY 1/2] ENERGY ACTIVE[0]p1
+  [MAIN 1/16] ATTACH hand[3] -> BENCH[0]
+  [MAIN 1/5] ABILITY BENCH[0]
+  [REMOVE_DAMAGE_COUNTER 1/2] CARD my ACT Dragapult ex[40/320 E:25]
+  [REMOVE_DAMAGE_COUNTER_COUNT 1/3] count=3
+  [DAMAGE_COUNTER 1/5] CARD opp BENCH Drakloak[60/90]
+  [MAIN 1/4] ATTACK Phantom Dive
+  [DAMAGE_COUNTER_ANY 1/4] CARD opp BENCH Drakloak[30/90]
+  [DAMAGE_COUNTER_ANY 1/4] CARD opp BENCH Drakloak[20/90]
+  [DAMAGE_COUNTER_ANY 1/4] CARD opp BENCH Drakloak[10/90]
+  [DAMAGE_COUNTER_ANY 1/4] CARD opp BENCH Drakloak[90/90]
+  [DAMAGE_COUNTER_ANY 1/4] CARD opp BENCH Drakloak[80/90]
+  [DAMAGE_COUNTER_ANY 1/4] CARD opp BENCH Drakloak[70/90]
+  [TO_HAND 1/2] CARD PRIZE[0]p0
+
+### turn 8
+  ME  prz=1 deck=34 | ACT (facedown) | BENCH Munkidori[110/110] Fezandipiti ex[200/210] Duskull[40/60] Dreepy[70/70] | hand: Basic {P} Energy Buddy-Buddy Poffin Buddy-Buddy Poffin Dusclops Dusknoir
+  OPP prz=3 deck=13 | ACT Dragapult ex[120/320 E:52] | BENCH Drakloak[60/90] Drakloak[90/90] Fezandipiti ex[210/210] | hand: (10)
+  [TO_ACTIVE 1/4] CARD my BENCH Dreepy[70/70]
+
+### turn 9
+  ME  prz=1 deck=33 | ACT Dreepy[70/70] | BENCH Munkidori[110/110] Fezandipiti ex[200/210] Duskull[40/60] | hand: Basic {P} Energy Buddy-Buddy Poffin Buddy-Buddy Poffin Dusclops Dusknoir Lillie's Determination
+  OPP prz=3 deck=13 | ACT Dragapult ex[120/320 E:52] | BENCH Drakloak[60/90] Drakloak[90/90] Fezandipiti ex[210/210] | hand: (10)
+  [MAIN 1/10] PLAY Buddy-Buddy Poffin
+  [TO_BENCH 2/3] CARD DECK[22]p0 | CARD DECK[5]p0
+  [MAIN 1/10] ABILITY BENCH[1]
+  [MAIN 1/12] PLAY Poké Pad
+  [TO_HAND 1/5] CARD DECK[8]p0
+  [MAIN 1/12] EVOLVE hand[7] onto ACTIVE[0]
+  [MAIN 1/12] ABILITY ACTIVE[0]
+  [TO_HAND 1/2] CARD LOOKING[1]p0
+  [MAIN 1/17] EVOLVE hand[1] onto BENCH[2]
+  [MAIN 1/17] ATTACH hand[0] -> BENCH[3]
+  [MAIN 1/5] PLAY Lillie's Determination
+  [MAIN 1/4] PLAY Poké Pad
+  [TO_HAND 1/3] CARD DECK[5]p0
+  [MAIN 1/3] PLAY Unfair Stamp
+  [MAIN 1/5] PLAY Poké Pad
+  [TO_HAND 1/5] CARD DECK[3]p0
+  [MAIN 1/4] PLAY Night Stretcher
+  [TO_HAND 1/10] CARD my DISC Dreepy
+  [MAIN 1/3] END
+##### RESULT: OPP WINS

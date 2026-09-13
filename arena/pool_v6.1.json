@@ -1,0 +1,51 @@
+{
+ "note": "標準相手プール **v6.1**（2026-08-05確定、07-30〜08-03メタ、36,328デッキ観測）。**v5以前のweighted値とは比較不可**（メタ激変 + 2枠の入替）。v6（重み更新のみ）からの変更: (1) **086 Lopunny → 130**（SLレプリカ。086は忠実度+38.6ptの案山子だった。130も+32.1ptで不合格だが両照合で優る） (2) **131 Teal Mask Ogerpon ex を新設**（忠実度ゲート合格 +2.6/+1.2pt。7.2%の新顔で枠が無かった）。カバー率 96.4%→ **Thwackey 4.3% のみカバー外**。**最大の既知の歪み: Lopunny枠(w9.7)の忠実度が+32.1pt甘い**＝候補の絶対値は約4pt過大に出る。候補どうしの比較には影響が小さい（全Alakazam候補がこの枠で89-92%と横並びのため）が、**異アーキタイプ間の比較（例: Lopunny乗り換えの是非）にこの枠を使ってはいけない**。その他の既知課題: 085 Kangaskhan 乖離-15.3pt / 021 Dragapult 未較正 / 血縁バイアス（Alakazam枠084、ただし重みは6.3%）",
+ "meta_date": "2026-07-30〜08-03",
+ "opponents": [
+  {
+   "dir": "agents/101_marnie_luca",
+   "weight": 48.3,
+   "archetype": "Marnie's Grimmsnarl ex（1ec0f47981/Luca のSLレプリカ（EXP-096）。**忠実度ゲート合格 +1.1pt**。082（乖離+19.3pt）から交代）"
+  },
+  {
+   "dir": "agents/130_lopunny_majkel",
+   "weight": 9.7,
+   "archetype": "Mega Lopunny ex（Majkel1337 / 5c1c56479b のSLレプリカ、657試合。**現行メタ最強デッキ 加重60.9%**。**忠実度は不合格**: 117との対戦が84.8%（真値52.7%、乖離+32.1pt）。ただし086（+38.6pt / 対Marnie−11.3pt）より両方の照合で優るため差し替えた。**この枠の値は依然として甘い＝プール全体の絶対値は約4pt過大**）"
+  },
+  {
+   "dir": "agents/085_kangaskhan_e57e",
+   "weight": 9.7,
+   "archetype": "Mega Kangaskhan ex（e57e レプリカ（EXP-085）。本番個体値との乖離-15.3pt（軽量逆設計の限界。100=SL版は不採用））"
+  },
+  {
+   "dir": "agents/131_ogerpon_majkel",
+   "weight": 7.2,
+   "archetype": "Teal Mask Ogerpon ex（Majkel1337 / 69a3d48d59 のSLレプリカ、607試合。**忠実度ゲート合格**: 117との対戦75.7%（真値73.1%、+2.6pt）/ 101との対戦86.3%（真値85.1%、+1.2pt）。対Marnie 85.1%という既存のどの枠とも違う対面プロファイルを持つ新顔）"
+  },
+  {
+   "dir": "agents/084_alakazam_majkel",
+   "weight": 6.3,
+   "archetype": "Alakazam（156952a871=Majkel型レプリカ（EXP-084）。vs038で真値-0.5pt。**血縁バイアス注意**（Alakazam系候補はミラー寄りで甘く出る））"
+  },
+  {
+   "dir": "agents/021_dragapult_sample",
+   "weight": 4.4,
+   "archetype": "Dragapult ex（公式サンプル方策（未較正）。087レプリカはゲート不合格でrejected）"
+  },
+  {
+   "dir": "agents/041_garchomp_replica",
+   "weight": 3.9,
+   "archetype": "Cynthia's Garchomp ex（fc15 レプリカ（EXP-041）。乖離-5.9pt）"
+  },
+  {
+   "dir": "agents/098_spidops_gen",
+   "weight": 2.7,
+   "archetype": "Team Rocket's Spidops（d5834c603a のSLレプリカ（EXP-096）。**忠実度ゲート合格 +0.5pt**。083（乖離+30.3pt）から交代。Articuno VeilがPowerful Handを無効化する構造カウンター）"
+  },
+  {
+   "dir": "agents/000_random",
+   "weight": 2.9,
+   "archetype": "random（本番10%ランダム対戦 + カバー外テール。カバー率97.1%）"
+  }
+ ]
+}

@@ -1,0 +1,123 @@
+
+### turn 0
+  ME  prz=0 deck=60 | ACT (facedown) | BENCH - | hand: (0)
+  OPP prz=0 deck=60 | ACT (facedown) | BENCH - | hand: (0)
+  [IS_FIRST 1/2] YES
+  [SETUP_ACTIVE_POKEMON 1/1] CARD my HAND Budew
+  [DRAW_COUNT 1/2] count=1
+
+### turn 1
+  ME  prz=6 deck=45 | ACT Budew[30/30] | BENCH - | hand: Basic {R} Energy Crushing Hammer Crushing Hammer Dragapult ex Drakloak Night Stretcher Poké Pad Ultra Ball
+  OPP prz=6 deck=47 | ACT Dunsparce[70/70] | BENCH - | hand: (6)
+  [MAIN 1/4] PLAY Poké Pad
+  [TO_HAND 1/12] CARD DECK[8]p0
+  [MAIN 1/4] PLAY Dreepy
+  [MAIN 1/5] ATTACH hand[1] -> BENCH[0]
+  [MAIN 1/3] END
+
+### turn 3
+  ME  prz=6 deck=43 | ACT Budew[30/30] | BENCH Dreepy[70/70 E:2] | hand: Crispin Crushing Hammer Crushing Hammer Dragapult ex Drakloak Night Stretcher Ultra Ball
+  OPP prz=6 deck=38 | ACT Abra[50/50] | BENCH Dunsparce[70/70 E:0] | hand: (10)
+  [MAIN 1/8] PLAY Crushing Hammer
+  [MAIN 1/7] PLAY Crushing Hammer
+  [DISCARD_ENERGY 1/1] ENERGY BENCH[0]p1
+  [MAIN 1/6] PLAY Crispin
+  [TO_HAND 1/5] CARD DECK[16]p0
+  [ATTACH_TO 1/3] CARD DECK[1]p0
+  [ATTACH_FROM 1/2] CARD my BENCH Dreepy[70/70 E:2]
+  [MAIN 1/7] EVOLVE hand[0] onto BENCH[0]
+  [MAIN 1/7] ABILITY BENCH[0]
+  [TO_HAND 1/2] CARD LOOKING[1]p0
+  [MAIN 1/6] ATTACK Itchy Pollen
+
+### turn 4
+  ME  prz=6 deck=40 | ACT (facedown) | BENCH Drakloak[90/90 E:25] | hand: Basic {R} Energy Boss’s Orders Dragapult ex Night Stretcher Ultra Ball
+  OPP prz=5 deck=32 | ACT Kadabra[70/80 E:5] | BENCH Fezandipiti ex[210/210] | hand: (14)
+  [TO_ACTIVE 1/1] CARD my BENCH Drakloak[90/90 E:25]
+
+### turn 5
+  ME  prz=6 deck=39 | ACT Drakloak[90/90 E:25] | BENCH - | hand: Basic {R} Energy Boss’s Orders Buddy-Buddy Poffin Dragapult ex Night Stretcher Ultra Ball
+  OPP prz=5 deck=32 | ACT Kadabra[70/80 E:5] | BENCH Fezandipiti ex[210/210] | hand: (14)
+  [MAIN 1/9] EVOLVE hand[1] onto ACTIVE[0]
+  [MAIN 1/8] PLAY Buddy-Buddy Poffin
+  [TO_BENCH 2/4] CARD DECK[7]p0 | CARD DECK[22]p0
+  [MAIN 1/10] PLAY Night Stretcher
+  [TO_HAND 1/1] CARD my DISC Budew
+  [MAIN 1/10] PLAY Budew
+  [MAIN 1/10] PLAY Boss’s Orders
+  [SWITCH 1/1] CARD opp BENCH Fezandipiti ex[210/210]
+  [MAIN 1/8] ATTACH hand[1] -> BENCH[0]
+  [MAIN 1/4] ATTACK Phantom Dive
+  [DAMAGE_COUNTER_ANY 1/1] CARD opp BENCH Kadabra[70/80 E:5]
+  [DAMAGE_COUNTER_ANY 1/1] CARD opp BENCH Kadabra[60/80 E:5]
+  [DAMAGE_COUNTER_ANY 1/1] CARD opp BENCH Kadabra[50/80 E:5]
+  [DAMAGE_COUNTER_ANY 1/1] CARD opp BENCH Kadabra[40/80 E:5]
+  [DAMAGE_COUNTER_ANY 1/1] CARD opp BENCH Kadabra[30/80 E:5]
+  [DAMAGE_COUNTER_ANY 1/1] CARD opp BENCH Kadabra[20/80 E:5]
+
+### turn 7
+  ME  prz=6 deck=36 | ACT Dragapult ex[60/320 E:25] | BENCH Dreepy[70/70 E:2] Dreepy[70/70] Budew[30/30] | hand: Team Rocket's Watchtower Ultra Ball
+  OPP prz=5 deck=23 | ACT Alakazam[70/140 E:5] | BENCH Fezandipiti ex[10/210] Abra[50/50] Abra[50/50] Dunsparce[70/70] Abra[50/50] | hand: (13)
+  [MAIN 1/4] PLAY Team Rocket's Watchtower
+  [MAIN 1/4] ATTACK Phantom Dive
+  [DAMAGE_COUNTER_ANY 1/5] CARD opp BENCH Fezandipiti ex[10/210]
+  [DAMAGE_COUNTER_ANY 1/5] CARD opp BENCH Abra[50/50]
+  [DAMAGE_COUNTER_ANY 1/5] CARD opp BENCH Abra[40/50]
+  [DAMAGE_COUNTER_ANY 1/5] CARD opp BENCH Abra[30/50]
+  [DAMAGE_COUNTER_ANY 1/5] CARD opp BENCH Abra[20/50]
+  [DAMAGE_COUNTER_ANY 1/5] CARD opp BENCH Abra[10/50]
+  [TO_HAND 1/6] CARD PRIZE[0]p0
+  [TO_HAND 2/5] CARD PRIZE[0]p0 | CARD PRIZE[1]p0
+  [TO_HAND 1/3] CARD PRIZE[0]p0
+
+### turn 8
+  ME  prz=2 deck=36 | ACT (facedown) | BENCH Dreepy[70/70 E:2] Dreepy[70/70] Budew[30/30] | hand: Basic {R} Energy Buddy-Buddy Poffin Drakloak Dreepy Ultra Ball
+  OPP prz=3 deck=15 | ACT Alakazam[140/140 E:5] | BENCH Kadabra[80/80] Dunsparce[70/70] Fezandipiti ex[210/210] Abra[50/50] | hand: (18)
+  [TO_ACTIVE 1/3] CARD my BENCH Budew[30/30]
+
+### turn 9
+  ME  prz=2 deck=35 | ACT Budew[30/30] | BENCH Dreepy[70/70 E:2] Dreepy[70/70] | hand: Basic {R} Energy Buddy-Buddy Poffin Crispin Drakloak Dreepy Ultra Ball
+  OPP prz=3 deck=15 | ACT Alakazam[140/140 E:5] | BENCH Kadabra[80/80] Dunsparce[70/70] Fezandipiti ex[210/210] Abra[50/50] | hand: (18)
+  [MAIN 1/12] PLAY Dreepy
+  [MAIN 1/12] PLAY Buddy-Buddy Poffin
+  [TO_BENCH 1/2] CARD DECK[24]p0
+  [MAIN 1/12] PLAY Crispin
+  [TO_HAND 1/3] CARD DECK[3]p0
+  [ATTACH_TO 1/2] CARD DECK[2]p0
+  [ATTACH_FROM 1/5] CARD my BENCH Dreepy[70/70]
+  [MAIN 1/16] EVOLVE hand[2] onto BENCH[0]
+  [MAIN 1/15] ABILITY BENCH[0]
+  [TO_HAND 1/2] CARD LOOKING[0]p0
+  [MAIN 1/15] PLAY Fezandipiti ex
+  [MAIN 1/17] ABILITY BENCH[4]
+  [MAIN 1/18] PLAY Ultra Ball
+  [DISCARD 2/5] CARD my HAND Drakloak | CARD my HAND Basic {D} Energy
+  [TO_HAND 1/8] CARD DECK[7]p0
+  [MAIN 1/10] EVOLVE hand[2] onto BENCH[1]
+  [MAIN 1/10] ABILITY BENCH[1]
+  [TO_HAND 1/2] CARD LOOKING[0]p0
+  [MAIN 1/9] ATTACH hand[0] -> BENCH[2]
+  [MAIN 1/3] ATTACK Itchy Pollen
+
+### turn 10
+  ME  prz=2 deck=26 | ACT (facedown) | BENCH Drakloak[90/90 E:2] Drakloak[90/90 E:2] Dreepy[70/70 E:2] Duskull[60/60] Budew[30/30] | hand: Lillie's Determination Moltres Munkidori
+  OPP prz=1 deck=12 | ACT Alakazam[130/140 E:5] | BENCH Alakazam[140/140 E:5] Dudunsparce[140/140] Fezandipiti ex[210/210] Kadabra[80/80] Dunsparce[70/70] | hand: (17)
+  [TO_ACTIVE 1/5] CARD my BENCH Budew[30/30]
+
+### turn 11
+  ME  prz=2 deck=25 | ACT Budew[30/30] | BENCH Drakloak[90/90 E:2] Drakloak[90/90 E:2] Dreepy[70/70 E:2] Duskull[60/60] | hand: Buddy-Buddy Poffin Lillie's Determination Moltres Munkidori
+  OPP prz=1 deck=12 | ACT Alakazam[130/140 E:5] | BENCH Alakazam[140/140 E:5] Dudunsparce[140/140] Fezandipiti ex[210/210] Kadabra[80/80] Dunsparce[70/70] | hand: (17)
+  [MAIN 1/9] PLAY Munkidori
+  [MAIN 1/6] ABILITY BENCH[0]
+  [TO_HAND 1/2] CARD LOOKING[1]p0
+  [MAIN 1/6] PLAY Poké Pad
+  [TO_HAND 1/4] CARD DECK[16]p0
+  [MAIN 1/6] ABILITY BENCH[1]
+  [TO_HAND 1/2] CARD LOOKING[1]p0
+  [MAIN 1/5] EVOLVE hand[3] onto BENCH[3]
+  [MAIN 1/5] PLAY Lillie's Determination
+  [MAIN 1/6] PLAY Team Rocket's Watchtower
+  [MAIN 1/5] PLAY Poké Pad
+  [TO_HAND 1/3] CARD DECK[7]p0
+  [MAIN 1/4] ATTACK Itchy Pollen
+##### RESULT: OPP WINS

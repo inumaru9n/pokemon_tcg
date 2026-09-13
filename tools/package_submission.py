@@ -67,6 +67,41 @@ def validate_deck(deck_path: str) -> list[str]:
     return problems
 
 
+def kaggle_style_load_check(agent_dir: str) -> None:
+    """Kaggle評価環境と同じ方法（exec、__file__無し・cwd=別ディレクトリ）でロード検証する。
+
+    kaggle_environments/agent.py は main.py を exec(code, env) で実行するため、
+    import前提のコード（__file__参照など）はKaggleでのみ落ちる（2026-07-05の提出失敗で実証）。
+    """
+    script = r"""
+import os, sys
+sys.path.insert(0, {repo!r})           # cg を解決させる（Kaggleでは同梱cgが解決する）
+os.chdir({tmp!r})                      # エージェントdirでもrepoでもないcwdを再現
+src = open({main!r}, encoding="utf-8").read()
+env = {{}}
+exec(compile(src, "<submission>", "exec"), env)   # __file__ を定義しない
+agent = [v for v in env.values() if callable(v) and getattr(v, "__name__", "") == "agent"]
+assert agent, "agent() not defined"
+print("kaggle-style load OK")
+"""
+    import json as _json  # noqa: F401
+    with tempfile.TemporaryDirectory() as tmp:
+        # Kaggleでは提出物一式が /kaggle_simulations/agent/ に展開される。
+        # ローカルではそのパスに置けないため、パッケージと同じファイル一式をcwdに
+        # 再現する（cwd相対フォールバックで解決されること。多ファイル提出対応）
+        for entry in _bundle_entries(agent_dir):
+            src = os.path.join(agent_dir, entry)
+            dst = os.path.join(tmp, entry)
+            (shutil.copytree if os.path.isdir(src) else shutil.copy2)(src, dst)
+        code = script.format(repo=REPO_ROOT, tmp=tmp,
+                             main=os.path.abspath(os.path.join(agent_dir, "main.py")))
+        out = subprocess.run([sys.executable, "-c", code],
+                             capture_output=True, text=True, cwd=REPO_ROOT)
+    if out.returncode != 0:
+        sys.exit(f"kaggle-style load check failed（Kaggle検証で落ちるコードです）:\n{out.stderr}")
+    print("kaggle-style load OK (exec, no __file__)")
+
+
 def self_play(agent_dir: str, games: int) -> None:
     cmd = ["uv", "run", os.path.join(REPO_ROOT, "arena", "run_match.py"),
            agent_dir, agent_dir, "-n", str(games), "-w", "1"]
@@ -81,6 +116,18 @@ def self_play(agent_dir: str, games: int) -> None:
           f"avg {summary['avg_steps']} steps")
 
 
+def _bundle_entries(agent_dir: str) -> list[str]:
+    """提出物に含めるエントリ一覧（cg/pycache/.submitignore指定を除外）。"""
+    ignore: set[str] = {".submitignore"}
+    ig_path = os.path.join(agent_dir, ".submitignore")
+    if os.path.exists(ig_path):
+        with open(ig_path) as f:
+            ignore |= {ln.strip() for ln in f if ln.strip()}
+    return [e for e in sorted(os.listdir(agent_dir))
+            if e not in ("cg", "__pycache__") and not e.endswith(".pyc")
+            and e not in ignore]
+
+
 def package(agent_dir: str) -> str:
     agent_dir = os.path.abspath(agent_dir)
     name = os.path.basename(os.path.normpath(agent_dir))
@@ -89,9 +136,7 @@ def package(agent_dir: str) -> str:
     out_path = os.path.join(SUBMISSIONS_DIR, f"{name}_{ts}.tar.gz")
 
     with tempfile.TemporaryDirectory() as tmp:
-        for entry in os.listdir(agent_dir):
-            if entry in ("cg", "__pycache__") or entry.endswith(".pyc"):
-                continue
+        for entry in _bundle_entries(agent_dir):
             src = os.path.join(agent_dir, entry)
             dst = os.path.join(tmp, entry)
             (shutil.copytree if os.path.isdir(src) else shutil.copy2)(src, dst)
@@ -121,6 +166,8 @@ def main() -> None:
     if problems:
         sys.exit("deck validation failed:\n- " + "\n- ".join(problems))
     print("deck OK")
+
+    kaggle_style_load_check(args.agent_dir)
 
     if not args.skip_self_play:
         self_play(args.agent_dir, args.self_play_games)

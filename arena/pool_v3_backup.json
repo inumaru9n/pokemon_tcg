@@ -1,0 +1,56 @@
+{
+ "note": "合否判定用の標準相手プール v3確定版（2026-07-10、EXP-045〜047完了時点）。weightは2026-07-09メタのシェア%。**v2（07-08メタ・Alakazam枠040・Kangaskhan枠039）とのweighted値比較は不可**（Alakazam枠040→045[81f1758c92フル精読]重み40.4、Kangaskhan枠039→047[b7cef02500]、Archaludon枠046を新設）。血縁バイアス注意: 045本人と045由来候補はAlakazam枠(40.4%)がほぼミラー化する。壁系対面はレプリカ対戦値が本番と±14-35ptズレるため個別対面の解釈は本番対面表を正とする（EXP-042、新例=038の対Kangaskhanはベンチ狩りシーケンス未実装で30pt甘い[EXP-047]）。レプリカのゲート照合先は個体sig対戦値より同製法トップ個体レプリカを優先（公開リストは混合パイロット品質のため。EXP-046）。Starmie枠注: 元個体491bはYushin本人が7/9に引退させn=89に減、厳密トップは270e580764(249戦53.4%)だがシェア3.6%枠の誤差はノイズ床未満のため035継続。Dragapult枠注: 2b31cd4174がn=195(56.4%)、n>=200到達なら軽量レプリカ化を検討。",
+ "meta_date": "2026-07-09",
+ "opponents": [
+  {
+   "dir": "agents/045_alakazam_full",
+   "weight": 40.4,
+   "archetype": "Alakazam（81f1758c92フル精読レプリカ+lethal、EXP-045。本人250戦76.4%=ladder最高個体。フル製法の流用=方針上OK）"
+  },
+  {
+   "dir": "agents/038_marnie_replica",
+   "weight": 14.3,
+   "archetype": "Marnie's Grimmsnarl ex（7308938c4dレプリカ、EXP-038。07-09でも同個体がトップ430戦54.9%で継続。既知の欠落=対Kangaskhanベンチ狩りシーケンス[EXP-047]）"
+  },
+  {
+   "dir": "agents/047_kangaskhan_replica",
+   "weight": 13.0,
+   "archetype": "Mega Kangaskhan ex（b7cef02500レプリカ、EXP-047。240戦58.3%の新トップ、vs045ゲート±2.2pt合格。旧代表039[89d834e4d4、52.3%に低下]から交代）"
+  },
+  {
+   "dir": "agents/041_garchomp_replica",
+   "weight": 7.4,
+   "archetype": "Cynthia's Garchomp ex（fc15d0c926レプリカ、EXP-041。07-09でもn>=200トップ563戦51.2%で継続）"
+  },
+  {
+   "dir": "agents/042_crustle_replica",
+   "weight": 4.3,
+   "archetype": "Crustle（8b3183042bレプリカ、EXP-042。07-09でも唯一のn>=200個体378戦50.0%）"
+  },
+  {
+   "dir": "agents/007_lucario_lethal",
+   "weight": 3.7,
+   "archetype": "Mega Lucario ex（自作・本番136戦較正済み）。n>=200個体が不在（07-09最大はd184c49a2fのn=174）のためフォールバック継続"
+  },
+  {
+   "dir": "agents/035_starmie_replica",
+   "weight": 3.6,
+   "archetype": "Mega Starmie ex（491b8bfb26レプリカ、EXP-035。探索なし素レプリカ。元個体は7/9引退、noteのStarmie枠注参照）"
+  },
+  {
+   "dir": "agents/046_archaludon_replica",
+   "weight": 3.0,
+   "archetype": "Archaludon ex（90dd411e61レプリカ、EXP-046。288戦52.8%、新規参入アーキタイプ。主ゲート=vs040 ±1.4pt合格。Articuno壁[Repelling Veil=Powerful Hand無効]+手札刈りのAlakazamカウンター）"
+  },
+  {
+   "dir": "agents/021_dragapult_sample",
+   "weight": 2.1,
+   "archetype": "Dragapult ex（公式方策）。フォールバック継続。**未較正**"
+  },
+  {
+   "dir": "agents/000_random",
+   "weight": 10.2,
+   "archetype": "random（本番10%ランダム対戦。カバー率91.8/9≈10.2）"
+  }
+ ]
+}
